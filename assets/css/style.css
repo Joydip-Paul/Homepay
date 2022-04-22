@@ -35,6 +35,27 @@ body {
     sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1E335D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFB048;
+}
+
+::selection {
+    color: #fff;
+    background: #233443;
+}
+
 :root {
     /* --primary-color: #3734A9; */
     --primary-color: #1E335D;
@@ -245,7 +266,7 @@ p{
 }
 
 .nav-btn{
-    background-color: #1E335D;
+    /* background-color: #1E335D; */
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -256,8 +277,12 @@ p{
     transform: translateX(-50%); */
 }
 
-.prev-slide{
+.prev-slide::after{
+    content: '\25ba';
 
+}
+.next-slide::after{
+    content: '\25c4';
 }
 
 .next-slide{
@@ -594,6 +619,7 @@ p{
     font-size: 48px;
     font-weight: 800;
     line-height: 96px;
+    color: var(--primary-color);
 }
 
 .blaze-hero h1 span{
@@ -685,6 +711,10 @@ p{
     padding-bottom: 20px;
 }
 
+.blaze-services img{
+    width: 100%;
+}
+
 .single-blaze-services h3::after{
     content: "";
     position: absolute;
@@ -721,4 +751,73 @@ p{
     color: rgba(0, 0, 0, 0.6);
     margin: 7px;
 }
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    content: "+" !important;
+    font-size: 1.5rem;
+    background-image: none;
+    background-color: #F4F5FF;
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "-" !important;
+    transform: rotate(0deg);
+    font-size: 1.6rem !important;
+    background-image: none;
+}
+.accordion-item{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(99, 105, 225, 0.26);
+    border-radius: 10px !important;
+    border: none;
+    margin: 20px 0;
+}
+
+.accordion-button{
+    color: var(--primary-color) !important;
+    font-size: 20px;
+    font-weight: 600;
+}
 /*=================== Blaze Code End =========================== */
+
+/* Animation */
+.circle-animation{
+    position: absolute;
+    top: -20%;
+    right: 5rem;
+    animation: 3s round infinite ease-out;
+}
+
+@keyframes round{
+    0%{
+        transform: scale(1.1);
+    }
+    20%{
+        transform: scale(1.11);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    70% {
+        transform: scale(1.13);
+    }
+    90% {
+        transform: scale(1.11);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+/* Animation */
