@@ -36,7 +36,8 @@ body {
 }
 
 :root {
-    --primary-color: #3734A9;
+    /* --primary-color: #3734A9; */
+    --primary-color: #1E335D;
     --text-color: #233443;
     --box-shadow: 0px 0px 10px #dad9d9;
     --box-shadow-tow: #959da533 0px 8px 24px;
@@ -46,8 +47,16 @@ h1,h2,h3,h4,h5,h6{
     color: var(--text-color);
 }
 
+p{
+    color: #333333A3;
+}
+
 .pt-100{
     padding-top: 100px;
+}
+
+.pt-50{
+    padding-top: 50px;
 }
 
 .pb-100{
@@ -100,21 +109,6 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
 }
 
-.play-icon{
-    color: #22D497;
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
-    margin-left: 30px;
-}
-
-.play-btn{
-    display: flex;
-    align-items: center;
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
 /* =================== Navbar code start =================== */
 .top-header {
     position: relative;
@@ -151,10 +145,6 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
 }
 
-.top-header-right ul li{
-    
-}
-
 .top-header-right a {
     text-decoration: none;
     color: #fff;
@@ -170,7 +160,7 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar {
     background: #e2e1ff;
-    /* padding: 1rem 0; */
+    height: auto !important;
     transition: .05s ease-in-out;
     margin-top: 3rem;
     height: 87px;
@@ -215,7 +205,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 1.4rem 0;
 }
 
-.active {
+/* .active {
     position: relative;
 }
 
@@ -227,9 +217,9 @@ h1,h2,h3,h4,h5,h6{
     background-color: var(--primary-color);
     height: 1px;
     width: 100%;
-}
+} */
 
-.active a{
+.active .nav-link{
     color: var(--primary-color) !important;
 }
 
@@ -247,11 +237,31 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .hero-row{
-    /* padding-top: 280px; */
-    position: absolute;
+    padding-top: 280px;
+    /* position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    overflow-x: hidden;
+    overflow-x: hidden; */
+}
+
+.nav-btn{
+    background-color: #1E335D;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.prev-slide{
+
+}
+
+.next-slide{
+    margin-right: 20px;
 }
 
 .shape{
@@ -294,9 +304,25 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .hero-content h1{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 65px;
+    margin: 1.5rem 0;
+}
+
+.hero-content h1 .home-pay{
     font-size: 50px;
     font-weight: 800;
-    margin: 1.5rem 0;
+}
+
+.hero-content h1 .heading-bg {
+    background: linear-gradient(to right,#F4F4FD, #EAEDFD);
+    padding: 0 .2rem;
+}
+
+.hero-content h1 .bd {
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .hero-content p{
@@ -305,10 +331,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .hero-btn{
-    /* display: flex;
-    align-items: center; */
     margin-top: 50px;
 }
+
+/* .owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: auto;
+    touch-action: auto;
+} */
 /* =================== Hero code End =================== */
 
 
@@ -318,7 +348,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .section-content{
-    margin: 50px 0;
+    /* margin: 50px 0; */
 }
 
 .section-content img{
@@ -342,6 +372,12 @@ h1,h2,h3,h4,h5,h6{
     box-sizing: border-box;
     border-radius: 10px;
     padding: 17px 33px;
+    transition: .3s;
+}
+
+.section-content a:hover{
+    background-color: #2D77A8;
+    color: #fff;
 }
 /* =================== Service code End =================== */
 
@@ -490,10 +526,12 @@ h1,h2,h3,h4,h5,h6{
     opacity: 0.7;
 }
 
-.address-area .number-email a{
+.address-area .number-email a, .address-area p{
     text-decoration: none;
-    color: #f1f1f1;
+    color: #fff;
+    opacity: 0.7;
 }
+
 
 .footer-social ul{
     display: grid;
@@ -537,3 +575,150 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
 }
 /* =================== Footer code End =================== */
+
+
+/*=================== Blaze Code Start =========================== */
+.blaze-hero-area{
+    height: 100vh;
+}
+
+.blaze-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.blaze-hero h1{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 96px;
+}
+
+.blaze-hero h1 span{
+    color: #FFB048;
+}
+
+.pulse-button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0 0 0 0 #1ab57fb5;
+    border-radius: 50%;
+    background-color: #1AB57F;
+    cursor: pointer;
+    -webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.play{
+    font-size: 30px;
+    color: #fff;
+}
+
+.pulse-button:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@-moz-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@-ms-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+.single-blaze-about{
+    background: #fff;
+    border: 0.5px solid #FAFAFA;
+    box-sizing: border-box;
+    box-shadow: 0px 64px 194px #0000001a;
+    border-radius: 22px;
+    padding: 30px 25px;
+    margin: 30px 0;
+}
+
+.single-blaze-about h2{
+    font-size: 28px;
+}
+
+.single-blaze-about p{
+    font-size: 18px;
+    color: #333333A3;
+}
+
+.gradient-bg{
+    background-image: linear-gradient(to right, #f3f3f3, #ffff);
+}
+
+.single-blaze-services h3{
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.single-blaze-services h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #926cff96;
+}
+
+.single-blaze-services p{
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.single-app-card{
+    box-shadow: 0px 4px 30px #41414126;
+    border-radius: 40px;
+    padding: 25px 36px;
+    text-align: center;
+}
+
+.single-app-card img{
+    width: 200px;
+}
+
+.single-app-card h4{
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+.download-app a{
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 7px;
+}
+/*=================== Blaze Code End =========================== */

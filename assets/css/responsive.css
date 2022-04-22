@@ -10,25 +10,42 @@
 /* ===================================
    Media Queries
 ====================================== */
+@media only screen and (max-width: 1400px) {
+    .img-box {
+        width: 500px;
+    }
+    .hero-content h1 {
+        margin: .5rem 0;
+    }
+    .hero-btn {
+        margin-top: 20px;
+    }
+
+    .contact-form input {
+        width: 250px;
+    }
+    .form-area textarea {
+        width: 530px;
+        margin-top: 20px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .navbar-brand {
         margin-left: .5rem;
     }
-
+    .contact-form .flex-field {
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .navbar {
         padding: 1rem 0;
-    }
-
-    .nav-area{
-        background-color: brown !important;
-    }
-
-    .nav-link {
-        /* color: #fff !important; */
     }
 
     .top-header {
@@ -47,9 +64,19 @@
         margin-left: 0;
     }
 
+    .nav-item{
+        padding: .5rem 0;
+    }
+
     .navbar-nav li {
         border-bottom: 1px solid #b4b4b4;
-        /* overflow: hidden; */
+    }
+    .img-box {
+        width: 624px;
+    }
+    .choose-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
 
@@ -57,15 +84,16 @@
     .navbar-nav li {
         margin: .5rem 0;
     }
-
+    .choose-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 776px) {
-
-}
 
 @media screen and (max-width: 576px) {
-
+    .choose-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* ===================================

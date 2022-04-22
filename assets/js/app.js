@@ -24,22 +24,25 @@ const date = new Date();
 const year = date.getFullYear();
 document.getElementById("year").innerHTML = year;
 
-// const sections = document.querySelectorAll(".section");
-// const navLi = document.querySelectorAll(".nav-item");
-// window.onscroll = () => {
-//     var current = "";
+$('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: true,
+    navText: ["<div class='nav-btn prev-slide'></div>",
+        "<div class='nav-btn next-slide'></div>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1,
+            autoHeight: true,
+            mouseDrag: true,
+            touchDrag: true,
+        }
+    }
+})
 
-//     sections.forEach((section) => {
-//         const sectionTop = section.offsetTop;
-//         if (pageYOffset >= sectionTop - 60) {
-//             current = section.getAttribute("id");
-//         }
-//     });
-
-//     navLi.forEach((li) => {
-//         li.classList.remove("active");
-//         if (li.classList.contains(current)) {
-//             li.classList.add("active");
-//         }
-//     });
-// };
