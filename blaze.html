@@ -49,7 +49,7 @@
     <nav class="nav-area" id="navbar_top">
         <div class="navbar navbar-expand-lg bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="assets/images/blaze-logo.png" alt=""></a>
     
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -59,7 +59,7 @@
     
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item active-item">
                             <a class="nav-link" href="index.html"> Home </a>
                         </li>
                         <li class="nav-item">
@@ -95,9 +95,14 @@
                     <div class="blaze-hero">
                         <h1><span>Blaze</span> is Bangladesh’s first instant, <br> 24×7, 365 days cross-border <br>
                             payment network</h1>
-                        <!-- <button class="pulse-button"></button> -->
-                        <a href="#" class="pulse-button"><i class="fa-solid fa-play play"></i></a>
-                        <!-- <a href="#" class="pulse-button"><i class="fa-solid fa-circle-play play"></i></a> -->
+                        <a href="#" class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
+                        <div class="video-frame">
+                            <video controls class="video">
+                                <source src="assets/images/clip.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +221,7 @@
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center">
+            <div class="row pt-50 d-flex align-items-center column-rev">
                 <div class="col-md-6">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
@@ -253,7 +258,7 @@
             <div class="section-title">
                 <h2>Supported Apps</h2>
             </div>
-            <div class="row pt-50 d-flex justify-content-center">
+            <div class="row g-4 pt-50 d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-app-card">
                         <img src="assets/images/skrill-logo.png" alt="">
@@ -516,6 +521,7 @@
 
 
 
+    <script src="assets/js/popup.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/all.min.js"></script>

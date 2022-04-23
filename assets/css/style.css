@@ -26,13 +26,14 @@ Version: 1.0
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap');
+
 /* 1. Theme default css */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope',
-    sans-serif;
+        sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -63,32 +64,43 @@ body {
     --box-shadow: 0px 0px 10px #dad9d9;
     --box-shadow-tow: #959da533 0px 8px 24px;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: var(--text-color);
 }
 
-p{
+p {
     color: #333333A3;
 }
 
-.pt-100{
+.pt-100 {
     padding-top: 100px;
 }
 
-.pt-50{
+.pt-50 {
     padding-top: 50px;
 }
 
-.pb-100{
+.pb-100 {
     padding-bottom: 100px;
 }
 
-.section-title{
+.section-title {
     text-align: center;
 }
 
-.section-title h2{
+.main-container {
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.section-title h2 {
     font-family: poppins;
     font-size: 36px;
     font-weight: 600;
@@ -97,7 +109,7 @@ p{
     padding-bottom: 30px;
 }
 
-.section-title h2::after{
+.section-title h2::after {
     content: "";
     position: absolute;
     height: 1px;
@@ -108,20 +120,20 @@ p{
     transform: translateX(-50%);
 }
 
-.section-title p{
+.section-title p {
     font-size: 20px;
     color: #333333A3;
     padding-top: 30px;
 }
 
-.btn{
+.btn {
     border: none;
     outline: none;
     font-size: 18px;
     text-decoration: none;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary-color);
     padding: 17px 34px;
     border-radius: 100px;
@@ -130,7 +142,22 @@ p{
     color: #fff;
 }
 
-/* =================== Navbar code start =================== */
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
+    border-radius: 10px;
+    padding: 15px 50px;
+    margin-top: 15px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #081736;
+}
+
+/* =================== 2. Navbar code start =================== */
 .top-header {
     position: relative;
     z-index: 501;
@@ -151,17 +178,17 @@ p{
     padding: 0;
 }
 
-.top-header-contact ul li{
+.top-header-contact ul li {
     /* margin: 0 .5rem; */
     transition: .3s ease-out;
 }
 
-.top-header-contact ul li a{
+.top-header-contact ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-.top-header-right ul{
+.top-header-right ul {
     list-style: none;
     display: flex;
 }
@@ -195,11 +222,9 @@ p{
     z-index: 500;
 }
 
-.navbar-brand {
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+.navbar-brand img {
+    min-width: 100px;
+    width: 50%;
 }
 
 .navbar-nav li {
@@ -226,21 +251,21 @@ p{
     padding: 1.4rem 0;
 }
 
-/* .active {
+.active-item {
     position: relative;
 }
 
-.active::after {
+.active-item::after {
     content: "";
     position: absolute;
-    bottom: -.1rem;
+    bottom: -.5rem;
     left: 0;
     background-color: var(--primary-color);
     height: 1px;
     width: 100%;
-} */
+}
 
-.active .nav-link{
+.active .nav-link {
     color: var(--primary-color) !important;
 }
 
@@ -248,63 +273,78 @@ p{
     padding: .8rem 0;
     margin: 0;
 }
+
 /* =================== Navbar code End =================== */
 
 
-/* =================== Hero code Start =================== */
-.hero-area{
+/* =================== 3. Hero code Start =================== */
+.hero-area {
     height: calc(100vh - 48px);
     position: relative;
 }
 
-.hero-row{
+.hero-row {
     padding-top: 280px;
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow-x: hidden; */
 }
 
-.nav-btn{
-    /* background-color: #1E335D; */
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
+/* .nav-btn {
     position: absolute;
-    bottom: 0;
-    right: 5rem;
-    /* left: 50%;
-    transform: translateX(-50%); */
+    bottom: -2rem;
+    left: 49%;
+    transform: translateX(-49%);
 }
 
-.prev-slide::after{
-    content: '\25ba';
-
-}
-.next-slide::after{
-    content: '\25c4';
+.prev-slide::after {
+    content: "<";
+    font-size: 30px;
 }
 
-.next-slide{
-    margin-right: 20px;
+.next-slide::after {
+    content: ">";
+    margin-left: 50px;
+    font-size: 30px;
+} */
+
+.owl-dots {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.shape{
+.owl-dots .owl-dot span {
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    margin: 0 5px;
+    background-color: #1E335D4D;
+    width: 20px;
+    height: 12px;
+    border-radius: 100px;
+}
+
+.owl-dots .owl-dot.active span {
+    background: #081736;
+    width: 30px;
+}
+
+.shape {
     position: absolute;
     width: 8%;
     z-index: -1;
 }
-.shape-1{
+
+.shape-1 {
     left: 0;
     top: 100px;
 }
 
-.shape-2{
+.shape-2 {
     left: 0;
     bottom: 180px;
 }
 
-.shape-3{
+.shape-3 {
     top: 100px;
     right: 35%;
 }
@@ -315,33 +355,33 @@ p{
     transform: rotate(285deg);
 }
 
-.img-box{
+.img-box {
     width: 624px;
 }
 
-.hero-row img{
+.hero-row img {
     width: 100%;
 }
 
-.hero-content small{
+.hero-content small {
     font-size: 24px;
     color: #1AB57F;
 }
 
-.hero-content h1{
+.hero-content h1 {
     font-size: 35px;
     font-weight: 600;
     line-height: 65px;
     margin: 1.5rem 0;
 }
 
-.hero-content h1 .home-pay{
+.hero-content h1 .home-pay {
     font-size: 50px;
     font-weight: 800;
 }
 
 .hero-content h1 .heading-bg {
-    background: linear-gradient(to right,#F4F4FD, #EAEDFD);
+    background: linear-gradient(to right, #F4F4FD, #EAEDFD);
     padding: 0 .2rem;
 }
 
@@ -350,101 +390,168 @@ p{
     font-weight: 700;
 }
 
-.hero-content p{
+.hero-content p {
     font-size: 18px;
     font-weight: 400;
 }
 
-.hero-btn{
+.hero-btn {
     margin-top: 50px;
 }
 
-/* .owl-carousel .owl-stage,
-.owl-carousel.owl-drag .owl-item {
-    -ms-touch-action: auto;
-    touch-action: auto;
-} */
 /* =================== Hero code End =================== */
 
 
-/* =================== Service code Start =================== */
-.service-area{
+/* =================== 4. Service code Start =================== */
+.service-area {
     background-color: #EBEFF94D;
 }
 
-.section-content{
-    /* margin: 50px 0; */
-}
-
-.section-content img{
-    /* width: 180px; */
+.section-content img {
     border-radius: 4px;
 }
 
-.section-content p{
+.section-content p {
     font-size: 18px;
     color: #323847A3;
-    margin: 50px 0;
+    margin: 40px 0;
     line-height: 33px;
 }
 
-.section-content a{
-    text-decoration: none;
-    color: #2D77A8;
-    font-size: 20px;
-    font-weight: 500;
-    border: 1px solid #2D77A8;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 17px 33px;
-    transition: .3s;
-}
-
-.section-content a:hover{
-    background-color: #2D77A8;
-    color: #fff;
-}
 /* =================== Service code End =================== */
 
-/* =================== Choose us code Start =================== */
-.choose-card{
+/* =================== 5. Choose us code Start =================== */
+.choose-card {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.single-choose-card{
+.single-choose-card {
     text-align: center;
+    border: 1px solid #08173611;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: .5s;
 }
 
-.single-choose-card h3{
+.single-choose-card:hover{
+    border: 1px solid #08173660;
+}
+
+.single-choose-card h3 {
     font-size: 24px;
     margin: 30px 0;
 }
 
-.single-choose-card p{
+.single-choose-card p {
     font-size: 16px;
     color: #233443;
 }
+
 /* =================== Choose us code End =================== */
 
-/* =================== Contact us code Start =================== */
-.contact-form h2{
+/* =================== 6. Testimonial code Start =================== */
+.bg-gradient-2 {
+    background: linear-gradient(173deg, #e3edfb 0%, #ffffff 98%);
+}
+
+.testimonial-title h4 {
+    font-size: 18px;
+    padding-left: 60px;
+    color: #1E335D99;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    position: relative;
+}
+
+.testimonial-title h4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background-color: #1E335D99;
+}
+
+.testimonial-title h2 {
+    font-size: 36px;
+}
+
+.single-testimonial {
+    background-color: #fff;
+    border: 1px solid #EFF0F7;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 14px rgba(8, 15, 52, 0.04);
+    border-radius: 20px;
+    padding: 30px 38px;
+}
+
+.single-testimonial:nth-child(odd) {
+    margin-right: 24px;
+}
+
+.single-testimonial span {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 100px;
+    background-color: #E6E4FF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.name h3 {
+    font-size: 18px;
+}
+
+.name h4 {
+    font-size: 18px;
+    color: #6F6C90;
+}
+
+/* =================== Testimonial code End =================== */
+
+/* =================== 7. Contact us code Start =================== */
+.contact-us {
+    margin-top: 100px;
+}
+
+
+.contact-form h2 {
     font-size: 36px;
     padding-bottom: 10px;
 }
 
-.contact-form small{
+.contact-form small {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 8px;
 }
 
-.contact-form .form-area{
+.contact-form .form-area {
     padding-top: 50px;
 }
 
-.contact-form input:focus, .contact-form input{
+.contact-form input:focus,
+.contact-form input {
     box-shadow: none;
     padding: 15px;
     border: 1px solid #ADADAD;
@@ -454,11 +561,13 @@ p{
     margin: 15px 0;
 }
 
-.form-area input::placeholder, .form-area textarea::placeholder{
+.form-area input::placeholder,
+.form-area textarea::placeholder {
     color: #40A4DB;
 }
 
-.form-area textarea, .form-area textarea:focus{
+.form-area textarea,
+.form-area textarea:focus {
     box-shadow: none;
     box-sizing: border-box;
     border-radius: 10px;
@@ -467,109 +576,104 @@ p{
     border: 1px solid #ADADAD;
 }
 
-.contact-form .flex-field{
+.contact-form .flex-field {
     display: flex;
     gap: 30px;
 }
 
-.contact-form .submit-btn{
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 16px;
-    box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
-    border-radius: 10px;
-    padding: 15px 50px;
-    margin-top: 15px;
-}
-
-.contact-info{
+.contact-info {
     margin-top: 60px;
 }
 
-.contact-info ul{
+.contact-info ul {
     padding: 0;
     list-style: none;
     margin-top: 20px;
 }
 
-.contact-info ul li{
+.contact-info ul li {
     margin: 20px 0;
     font-size: 16px;
     font-weight: 300;
-    color: #7E7E7E;
     display: flex;
     gap: 20px;
 }
 
-.contact-info ul li span{
+.contact-info ul li p{
+    color: var(--text-color);
+}
+
+.contact-info ul li span {
     color: var(--primary-color);
     font-size: 30px;
 }
 
-.contact-social{
+.contact-social {
     margin-top: 10px;
 }
 
-.contact-social a{
+.contact-social a {
     color: var(--primary-color);
     font-size: 30px;
 }
+
 /* =================== Contact us code End =================== */
 
-/* =================== Footer code Start =================== */
-.footer-area{
+/* =================== 7. Footer code Start =================== */
+.footer-area {
     background-color: var(--primary-color);
 }
 
-.main-footer{
+.main-footer {
     padding: 100px 0;
 }
 
-.single-footer ul{
+.single-footer ul {
     padding: 0;
     list-style: none;
 }
 
-.single-footer ul li:nth-child(2){
+.single-footer ul li:nth-child(2) {
     margin: .5rem 0;
 }
 
-.single-footer ul li a{
+.single-footer ul li a {
     text-decoration: none;
     color: #fff;
     opacity: 0.7;
 }
 
-.single-footer h3{
+.single-footer h3 {
     font-size: 20px;
     color: #fff;
     padding-bottom: 30px;
 }
 
-.address-area{
+.address-area {
     color: #fff;
     opacity: 0.7;
 }
 
-.address-area .number-email a, .address-area p{
+.address-area .number-email a,
+.address-area p {
     text-decoration: none;
     color: #fff;
     opacity: 0.7;
 }
 
 
-.footer-social ul{
+.footer-social ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.footer-social ul li a{
+.footer-social ul li a {
     display: flex;
     align-items: center;
 }
 
-.footer-social ul li span{
+.footer-social ul li span {
     background-color: #fff;
     font-size: 20px;
     color: #1778F2;
@@ -583,47 +687,53 @@ p{
     margin: 0 10px 0 0;
 }
 
-.footer-social ul li:nth-child(2){
+.footer-social ul li:nth-child(2) {
     margin: 0;
 }
 
-.copyright{
+.copyright {
     padding: 30px;
 }
 
-.hr{
+.hr {
     color: #8E8E8E;
 }
 
-.copyright p{
+.copyright p {
     text-align: center;
     color: #fff;
 }
+
 /* =================== Footer code End =================== */
 
 
 /*=================== Blaze Code Start =========================== */
-.blaze-hero-area{
+.blaze-hero-area {
     height: 100vh;
 }
 
-.blaze-hero{
+.blaze-hero {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.blaze-hero h1{
+.blaze-hero h1 {
     font-size: 48px;
     font-weight: 800;
     line-height: 96px;
     color: var(--primary-color);
 }
 
-.blaze-hero h1 span{
+.blaze-hero h1 span {
     color: #FFB048;
+
+}
+
+.blaze-hero h1 .konnect {
+    color: #F24B46;
 }
 
 .pulse-button {
@@ -646,7 +756,7 @@ p{
     animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
-.play{
+.play {
     font-size: 30px;
     color: #fff;
 }
@@ -656,6 +766,49 @@ p{
     -moz-animation: none;
     -ms-animation: none;
     animation: none;
+}
+
+.play-active.pulse-button {
+    background-color: red;
+}
+
+.video-frame {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: #1ab57f14;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.video-frame video {
+    border-radius: 10px;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.video-frame .close {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.video-frame.video-active {
+    transition-delay: 0.5s;
+    transition: .5s ease-out;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 @-webkit-keyframes pulse {
@@ -682,7 +835,7 @@ p{
     }
 }
 
-.single-blaze-about{
+.single-blaze-about {
     background: #fff;
     border: 0.5px solid #FAFAFA;
     box-sizing: border-box;
@@ -692,30 +845,34 @@ p{
     margin: 30px 0;
 }
 
-.single-blaze-about h2{
+.single-blaze-about h2 {
     font-size: 28px;
 }
 
-.single-blaze-about p{
+.single-blaze-about p {
     font-size: 18px;
     color: #333333A3;
 }
 
-.gradient-bg{
+.gradient-bg {
     background-image: linear-gradient(to right, #f3f3f3, #ffff);
 }
 
-.single-blaze-services h3{
+.single-blaze-services h3 {
     font-size: 30px;
     position: relative;
     padding-bottom: 20px;
 }
 
-.blaze-services img{
+.blaze-services img {
     width: 100%;
 }
 
-.single-blaze-services h3::after{
+.blaze-konnect-img img {
+    width: 75%;
+}
+
+.single-blaze-services h3::after {
     content: "";
     position: absolute;
     left: 0;
@@ -725,28 +882,28 @@ p{
     background-color: #926cff96;
 }
 
-.single-blaze-services p{
+.single-blaze-services p {
     font-size: 18px;
     padding-top: 30px;
 }
 
-.single-app-card{
+.single-app-card {
     box-shadow: 0px 4px 30px #41414126;
     border-radius: 40px;
     padding: 25px 36px;
     text-align: center;
 }
 
-.single-app-card img{
+.single-app-card img {
     width: 200px;
 }
 
-.single-app-card h4{
+.single-app-card h4 {
     font-size: 28px;
     margin-top: 50px;
 }
 
-.download-app a{
+.download-app a {
     font-size: 35px;
     color: rgba(0, 0, 0, 0.6);
     margin: 7px;
@@ -776,7 +933,8 @@ p{
     font-size: 1.6rem !important;
     background-image: none;
 }
-.accordion-item{
+
+.accordion-item {
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(99, 105, 225, 0.26);
     border-radius: 10px !important;
@@ -784,40 +942,47 @@ p{
     margin: 20px 0;
 }
 
-.accordion-button{
+.accordion-button {
     color: var(--primary-color) !important;
     font-size: 20px;
     font-weight: 600;
 }
+
 /*=================== Blaze Code End =========================== */
 
 /* Animation */
-.circle-animation{
+.circle-animation {
     position: absolute;
     top: -20%;
     right: 5rem;
     animation: 3s round infinite ease-out;
 }
 
-@keyframes round{
-    0%{
+@keyframes round {
+    0% {
         transform: scale(1.1);
     }
-    20%{
+
+    20% {
         transform: scale(1.11);
     }
+
     50% {
         transform: scale(1.12);
     }
+
     70% {
         transform: scale(1.13);
     }
+
     90% {
         transform: scale(1.11);
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
     }
 }
+
 /* Animation */
