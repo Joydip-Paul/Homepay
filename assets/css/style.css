@@ -223,8 +223,7 @@ p {
 }
 
 .navbar-brand img {
-    min-width: 100px;
-    width: 50%;
+    width: 100px;
 }
 
 .navbar-nav li {
@@ -404,7 +403,7 @@ p {
 
 /* =================== 4. Service code Start =================== */
 .service-area {
-    background-color: #EBEFF94D;
+    background: linear-gradient(-17deg, #e3edfb 0%, #ffffff 98%);
 }
 
 .section-content img {
@@ -421,6 +420,10 @@ p {
 /* =================== Service code End =================== */
 
 /* =================== 5. Choose us code Start =================== */
+.why-choose-us{
+    position: relative;
+}
+
 .choose-card {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -454,6 +457,20 @@ p {
 /* =================== 6. Testimonial code Start =================== */
 .bg-gradient-2 {
     background: linear-gradient(173deg, #e3edfb 0%, #ffffff 98%);
+    position: relative;
+}
+
+.ellipse-shape{
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+.tri-shape{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: rotate(270deg);
 }
 
 .testimonial-title h4 {
@@ -746,9 +763,9 @@ p {
     align-content: center;
     margin: 0 auto;
     border: none;
-    box-shadow: 0 0 0 0 #1ab57fb5;
+    box-shadow: 0 0 0 0 #0817367e;
     border-radius: 50%;
-    background-color: #1AB57F;
+    background-color: #081736;
     cursor: pointer;
     -webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
     -moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -757,7 +774,7 @@ p {
 }
 
 .play {
-    font-size: 30px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -813,26 +830,30 @@ p {
 
 @-webkit-keyframes pulse {
     to {
-        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 35px #e84c3d00;
     }
 }
 
 @-moz-keyframes pulse {
     to {
-        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 35px #e84c3d00;
     }
 }
 
 @-ms-keyframes pulse {
     to {
-        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 35px #e84c3d00;
     }
 }
 
 @keyframes pulse {
     to {
-        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 35px #e84c3d00;
     }
+}
+
+.blaze-about-area{
+    background: linear-gradient(347deg, #e3edfb 0%, #ffffff 98%);
 }
 
 .single-blaze-about {
@@ -856,6 +877,10 @@ p {
 
 .gradient-bg {
     background-image: linear-gradient(to right, #f3f3f3, #ffff);
+}
+
+.blaze-services{
+    background: linear-gradient(150deg, #e3edfb 0%, #ffffff 98%);
 }
 
 .single-blaze-services h3 {
