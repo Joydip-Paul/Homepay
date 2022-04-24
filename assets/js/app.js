@@ -25,6 +25,23 @@ const date = new Date();
 const year = date.getFullYear();
 document.getElementById("year").innerHTML = year;
 
+// Scroll Button Start
+var myButton = document.getElementById("myBtn");
+window.onscroll = function () { Jishu() };
+function Jishu() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        myButton.style.display = "block";
+    } else {
+        myButton.style.display = "none";
+    }
+}
+function Joydip() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+// Scroll Button End
+
+
 
 // Owl carousel
 $(document).ready(function () {
@@ -70,4 +87,9 @@ $(document).ready(function () {
             }
         }
     })
+
+
+    $('.navbar-collapse a').click(function () {
+        $(".navbar-collapse").collapse('hide');
+    });
 });

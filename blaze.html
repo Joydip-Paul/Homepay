@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePay</title>
+    <title>Blaze</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,68 +14,36 @@
 
 <body>
     <!-- Navbar Area -->
-    <div class="top-header">
-        <div class="container">
-            <div class="top-header-item">
-                <div class="top-header-contact">
-                    <ul>
-                        <li>
-                            <a href="+008165165166" target="_blank">
-                                <i class="fa-solid fa-phone"></i>
-                                +008 (165165166)</a>
-                        </li>
-                        <li class="mx-4">
-                            <a href="mailto:homepay@gmail.com"><i class="fa-regular fa-envelope"></i>
-                                homepay@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="top-header-right">
-                    <ul>
-                        <li><a href="#">
-                                <i class="fa-solid fa-arrow-right-to-bracket mx-1"></i>
-                                Log in</a></li>
-                        <li><a href="#">
-                                <i class="fa-solid fa-user mx-1"></i>
-                                Register</a></li>
-                        <li><a href="#">
-                                <i class="fa-solid fa-globe mx-1"></i>
-                                En</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav class="nav-area" id="navbar_top">
-        <div class="navbar navbar-expand-lg bg-light">
+    <nav class="nav-area">
+        <div class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="assets/images/blaze-logo.png" alt=""></a>
-    
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
-    
+
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active-item">
                             <a class="nav-link" href="index.html"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> About </a>
+                            <a class="nav-link" href="#about"> About Blaze </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Product </a>
+                            <a class="nav-link" href="#whyBlaze"> Why Blaze </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Services </a>
+                            <a class="nav-link" href="#services"> Services </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Partners </a>
+                            <a class="nav-link" href="#supportedApp">Supported Apps</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Contact </a>
+                            <a class="nav-link" href="#faq"> FAQ </a>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +78,7 @@
     </section>
     <!-- Hero Area End -->
 
-    <section class="blaze-about-area pt-100 section position-relative">
+    <section class="blaze-about-area pt-100 section position-relative" id="about">
         <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
         <div class="container">
             <div class="section-title">
@@ -150,7 +118,7 @@
             </div>
         </div>
 
-        <div class="why-choose-us pt-100">
+        <div class="why-choose-us pt-100" id="whyBlaze">
             <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
             <img src="assets/images/shape-2.svg" alt="" class="tri-shape">
             <div class="container">
@@ -158,7 +126,8 @@
                     <h2>Why Blaze</h2>
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <p>Our values define us. They guide us in building and improving our product, hiring teammates,
+                            <p>Our values define us. They guide us in building and improving our product, hiring
+                                teammates,
                                 and serving our
                                 customers.</p>
                         </div>
@@ -197,7 +166,7 @@
         </div>
     </section>
 
-    <section class="blaze-services pt-100 section">
+    <section class="blaze-services pt-100" id="services">
         <div class="container">
             <div class="section-title">
                 <h2>Our Services</h2>
@@ -211,7 +180,7 @@
 
             <div class="row pt-50 d-flex align-items-center">
                 <div class="col-md-6">
-                    <img src="assets/images/blaze-services-1.svg" alt="" loading = "lazy">
+                    <img src="assets/images/blaze-services-1.svg" alt="" loading="lazy">
                 </div>
                 <div class="col-md-6">
                     <div class="single-blaze-services">
@@ -255,7 +224,7 @@
         </div>
     </section>
 
-    <section class="app-card pt-100 section">
+    <section class="app-card pt-100" id="supportedApp">
         <div class="container">
             <div class="section-title">
                 <h2>Supported Apps</h2>
@@ -299,7 +268,7 @@
         </div>
     </section>
 
-    <section class="faq pt-100 section">
+    <section class="faq pt-100" id="faq">
         <div class="container">
             <div class="section-title">
                 <h2>If You Got Questions
@@ -312,20 +281,23 @@
             </div>
             <div class="row pt-50 pb-100">
                 <div class="col-md-6">
-                   <div>
+                    <div>
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        How to send money online?
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Is Blaze a remittance app? Can I download it anywhere?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quidem quibusdam nihil libero
-                                            quod rerum sapiente nesciunt a maxime omnis?</p>
+                                        <p>-- No, Blaze is not a remittance app. Blaze is a service that connects global
+                                            remittance companies with 35+ banks in
+                                            Bangladesh. Once connected, money can be sent to Bangladesh within 5
+                                            seconds. Blaze runs 24 hours a day, 7 days a week
+                                            ensuring seamless financial service at your fingertips.</p>
                                     </div>
                                 </div>
                             </div>
@@ -333,48 +305,57 @@
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        How much are money transfer fee?
+                                        I'm Probashi/expatriate, how can I use Blaze service now?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi quo quisquam reiciendis,
-                                            laudantium aut neque dolorum rerum iusto fugit.</p>
+                                        <p>-- We are extending our partnership with global remittance
+                                            companies/services.
+                                            Currently you can use:
+                                            Taptap send: https://www.taptapsend.com,
+                                            Skrill: https://www.skrill.com/en/transfer-money</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        How much are money transfer fee?
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What if my remittance company is not Blaze enabled?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quidem totam aliquam, repellat quasi alias nesciunt repudiandae iusto aspernatur exercitationem sint asperiores laborum tempore. Corporis iste, quasi, doloremque dolor officiis amet praesentium deleniti animi exercitationem ea, perspiciatis veritatis quae labore. Quisquam perferendis, ab praesentium vitae non doloribus suscipit nostrum?</p>
+                                        <p>-- You may use the apps above or also you can request your remittance company
+                                            to contact Blaze to use Blaze service.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        How much are money transfer fee?
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        What remittance companies are going to be supported by Blaze?
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro quidem sit, blanditiis in
-                                            odio tenetur officiis iste quas.</p>
+                                        <p>-- We are constantly extending our partnership with the leading remittance
+                                            platforms. We are currently working with
+                                            Xoom, a PayPal service. The list is growing as Blaze is integrating with
+                                            many popular payment services.Please keep an
+                                            eye on our website and social media for live updates.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                   </div>
+                    </div>
                 </div>
 
                 <div class="col-md-6">
@@ -382,16 +363,18 @@
                         <div class="accordion" id="accordionExample2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                        aria-expanded="true" aria-controls="collapseFive">
-                                        How to send money online?
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive">
+                                        I'm a local Bangladeshi bank, I want to connect to Blaze. What should I do?
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
-                                    data-bs-parent="#accordionExample2">
+                                <div id="collapseFive" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quidem quibusdam nihil
-                                            libero quod rerum sapiente nesciunt a maxime omnis?</p>
+                                        <p>-- Blaze is very easy to integrate. Please email us at blaze@homepay.io or
+                                            contact us through the website. Our technical
+                                            team will provide you necessary supports for the integration process.</p>
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +388,8 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi quo quisquam
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi
+                                            quo quisquam
                                             reiciendis, laudantium aut neque dolorum rerum iusto fugit.</p>
                                     </div>
                                 </div>
@@ -413,14 +397,16 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingSeven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
                                         How much are money transfer fee?
                                     </button>
                                 </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                                    data-bs-parent="#accordionExample2">
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro quidem sit,
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
+                                            quidem sit,
                                             blanditiis in odio tenetur officiis iste quas.</p>
                                     </div>
                                 </div>
@@ -428,14 +414,16 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingEight">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
                                         How much are money transfer fee?
                                     </button>
                                 </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                                                        data-bs-parent="#accordionExample2">
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro quidem sit,
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
+                                            quidem sit,
                                             blanditiis in
                                             odio tenetur officiis iste quas.</p>
                                     </div>
@@ -444,7 +432,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -522,7 +510,8 @@
 
 
 
-
+    <script src="assets/js/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/owl-carousel.min.js"></script>
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/bootstrap.js"></script>
