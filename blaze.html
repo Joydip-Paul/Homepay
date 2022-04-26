@@ -33,9 +33,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#about"> About Blaze </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#whyBlaze"> Why Blaze </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#services"> Services </a>
                         </li>
@@ -63,9 +63,11 @@
                     <div class="blaze-hero">
                         <h1><span>Blaze</span> is Bangladesh’s first instant, <br> 24×7, 365 days cross-border <br>
                             payment network</h1>
-                        <a href="#" class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
+                        <div class="pulse-area">
+                            <a href="#" class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
+                        </div>
                         <div class="video-frame">
-                            <video controls class="video">
+                            <video controls class="video" poster = "Blaze">
                                 <source src="assets/images/clip.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -78,7 +80,8 @@
     </section>
     <!-- Hero Area End -->
 
-    <section class="blaze-about-area pt-100 section position-relative" id="about">
+    <!-- This section is off by ------------d-none----------- class -->
+    <section class="blaze-about-area pt-100 section position-relative d-none" id="about">
         <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
         <div class="container">
             <div class="section-title">
@@ -178,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center">
+            <div class="row gx-5 pt-50 d-flex align-items-center">
                 <div class="col-md-6">
                     <img src="assets/images/blaze-services-1.svg" alt="" loading="lazy">
                 </div>
@@ -206,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center">
+            <div class="row gx-5 pt-50 d-flex align-items-center">
                 <div class="col-md-6">
                     <img src="assets/images/blaze-services-3.svg" alt="">
                 </div>
@@ -232,7 +235,9 @@
             <div class="row g-4 pt-50 d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-app-card">
-                        <img src="assets/images/skrill-logo.png" alt="">
+                        <div class="img-box">
+                            <img src="assets/images/skrill-logo.png" alt="">
+                        </div>
                         <h4>Globally</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
@@ -243,7 +248,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-app-card">
-                        <img src="assets/images/taptap-logo.png" alt="">
+                        <div class="img-box">
+                            <img src="assets/images/taptap-logo.png" alt="">
+                        </div>
                         <h4>Uk, USA, ED & Canada</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
@@ -254,7 +261,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-app-card">
-                        <img src="assets/images/tranglo-logo.png" alt="">
+                        <div class="img-box">
+                            <img src="assets/images/tranglo-logo.png" alt="">
+                        </div>
                         <h4>Malaysia & Singapure</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
@@ -271,17 +280,16 @@
     <section class="faq pt-100" id="faq">
         <div class="container">
             <div class="section-title">
-                <h2>If You Got Questions
-                    We Have Answer</h2>
+                <h2>Frequently Asked Questions</h2>
                 <div class="row">
                     <div class="col-md-8 mx-auto">
-                        <p>Let your users send funds to any Bank account in Bangladesh.</p>
+                        <!-- <p>Let your users send funds to any Bank account in Bangladesh.</p> -->
                     </div>
                 </div>
             </div>
             <div class="row pt-50 pb-100">
                 <div class="col-md-6">
-                    <div>
+                    <div class="faq-area">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
@@ -359,7 +367,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div>
+                    <div class="faq-area">
                         <div class="accordion" id="accordionExample2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">

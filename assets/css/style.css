@@ -25,15 +25,15 @@ Version: 1.0
 .....................
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /* 1. Theme default css */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Manrope',
-        sans-serif;
+    font-family: 'Poppins',
+    sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -106,24 +106,26 @@ p {
     font-weight: 600;
     color: var(--text-color);
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    display: inline;
 }
 
 .section-title h2::after {
     content: "";
     position: absolute;
     height: 1px;
-    width: 229px;
+    width: 100%;
     background-color: #2D77A8A3;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    margin-bottom: 20px;
 }
 
 .section-title p {
     font-size: 20px;
     color: #333333A3;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .btn {
@@ -199,7 +201,6 @@ p {
 }
 
 .top-header-contact ul li {
-    /* margin: 0 .5rem; */
     transition: .3s ease-out;
 }
 
@@ -236,16 +237,8 @@ p {
 }
 
 .home-nav{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
-
-/* .blaze-nav{
-    background: linear-gradient(to right, #f7f7ff, #E6E5FF);
-}
-
-.konnect-nav-bar{
-    background: linear-gradient(to right, #f7f7ff, #E6E5FF);
-} */
 
 .nav-area {
     position: fixed;
@@ -257,6 +250,10 @@ p {
 
 .navbar-brand img {
     width: 100px;
+}
+
+.konnect-logo img{
+    width: 200px;
 }
 
 .navbar-nav li {
@@ -280,7 +277,7 @@ p {
 
 .nav-item {
     position: relative;
-    padding: 1.4rem 0;
+    padding: 1rem 0;
 }
 
 .active-item {
@@ -302,7 +299,7 @@ p {
 }
 
 .fixed-top .navbar {
-    padding: .8rem 0;
+    /* padding: .8rem 0; */
     margin: 0;
 }
 
@@ -338,6 +335,7 @@ p {
 } */
 
 .owl-dots {
+    margin-top: 50px;
     position: absolute;
     bottom: -5rem;
     left: 49%;
@@ -397,14 +395,15 @@ p {
 
 .hero-content small {
     font-size: 24px;
+    font-weight: regular;
     color: #1AB57F;
 }
 
 .hero-content h1 {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 65px;
-    margin: 1.5rem 0;
+    margin-top: 10px;
 }
 
 .hero-content h1 .home-pay {
@@ -417,14 +416,15 @@ p {
     padding: 0 .2rem;
 }
 
-.hero-content h1 .bd {
+/* .hero-content h1 .bd {
     font-size: 40px;
     font-weight: 700;
-}
+} */
 
 .hero-content p {
     font-size: 18px;
     font-weight: 400;
+    margin-top: 26px;
 }
 
 .hero-btn {
@@ -823,6 +823,7 @@ p {
     border-radius: 50%;
     background-color: #081736;
     cursor: pointer;
+    margin-top: 1rem;
     -webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
     -moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
     -ms-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -858,7 +859,9 @@ p {
     z-index: 9999;
     background-color: #1ab57f14;
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
 }
 
@@ -958,7 +961,7 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 40%;
     height: 1px;
     background-color: #926cff96;
 }
@@ -968,15 +971,33 @@ p {
     padding-top: 30px;
 }
 
+.app-card{
+    background: url(../images/app-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    width: 100%;
+}
+
 .single-app-card {
+    margin-top: 50px;
     box-shadow: 0px 4px 30px #41414126;
     border-radius: 40px;
     padding: 25px 36px;
     text-align: center;
+    background-color: #fff;
+    /* height: 342px; */
+}
+
+.single-app-card .img-box{
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .single-app-card img {
-    width: 200px;
+    width: 100%;
 }
 
 .single-app-card h4 {
@@ -988,6 +1009,10 @@ p {
     font-size: 35px;
     color: rgba(0, 0, 0, 0.6);
     margin: 7px;
+}
+
+.faq-area{
+    margin-top: 50px;
 }
 
 .accordion-button {
