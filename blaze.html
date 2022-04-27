@@ -22,7 +22,12 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> -->
+                    <div class="hamburger-menu">
+                        <div class="menu-bar1"></div>
+                        <div class="menu-bar2"></div>
+                        <div class="menu-bar3"></div>
+                    </div>
                 </button>
 
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
@@ -31,7 +36,7 @@
                             <a class="nav-link" href="index.html"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about"> About Blaze </a>
+                            <a class="nav-link" href="#about"> Why Blaze </a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#whyBlaze"> Why Blaze </a>
@@ -59,15 +64,16 @@
         <img src="assets/images/shape-2.svg" alt="" class="shape shape-4">
         <div class="container">
             <div class="row">
+                <img src="assets/images/splash.png" alt="" class="splash">
                 <div class="col-lg-12">
                     <div class="blaze-hero">
                         <h1><span>Blaze</span> is Bangladesh’s first instant, <br> 24×7, 365 days cross-border <br>
                             payment network</h1>
                         <div class="pulse-area">
-                            <a href="#" class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
+                            <a class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
                         </div>
                         <div class="video-frame">
-                            <video controls class="video" poster = "Blaze">
+                            <video controls class="video">
                                 <source src="assets/images/clip.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -81,9 +87,9 @@
     <!-- Hero Area End -->
 
     <!-- This section is off by ------------d-none----------- class -->
-    <section class="blaze-about-area pt-100 section position-relative d-none" id="about">
-        <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
-        <div class="container">
+    <section class="blaze-about-area pt-100 section position-relative" id="about">
+        <!-- <img src="assets/images/circle-bg.png" alt="" class="circle-animation"> -->
+        <div class="container d-none">
             <div class="section-title">
                 <h2>About Blaze</h2>
                 <div class="row">
@@ -121,22 +127,23 @@
             </div>
         </div>
 
-        <div class="why-choose-us pt-100" id="whyBlaze">
+        <div class="why-choose-us pt-100 pb-200" id="whyBlaze">
             <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
             <img src="assets/images/shape-2.svg" alt="" class="tri-shape">
+            <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
             <div class="container">
                 <div class="section-title">
-                    <h2>Why Blaze</h2>
-                    <div class="row">
+                    <h2>Why Choose Blaze</h2>
+                    <!-- <div class="row">
                         <div class="col-md-8 mx-auto">
                             <p>Our values define us. They guide us in building and improving our product, hiring
                                 teammates,
                                 and serving our
                                 customers.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="choose-card pt-100 pb-100">
+                <div class="choose-card pt-100">
                     <div class="single-choose-card">
                         <img src="assets/images/choose-icon-1.png" alt="">
                         <h3>Single API</h3>
@@ -169,23 +176,23 @@
         </div>
     </section>
 
-    <section class="blaze-services pt-100" id="services">
+    <section class="blaze-services pt-100 pb-100" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Our Services</h2>
-                <div class="row">
+                <h2>Our Services for Digital Payment Platforms</h2>
+                <!-- <div class="row">
                     <div class="col-md-8 mx-auto">
                         <p>Our values define us. They guide us in building and improving our product, hiring teammates,
                             and serving our customers.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
-            <div class="row gx-5 pt-50 d-flex align-items-center">
+            <div class="row gx-5 pt-100 d-flex align-items-center">
                 <div class="col-md-6">
                     <img src="assets/images/blaze-services-1.svg" alt="" loading="lazy">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
@@ -195,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center column-rev">
+            <div class="row pt-100  d-flex align-items-center column-rev">
                 <div class="col-md-6">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
@@ -204,16 +211,16 @@
                             take a day. Our team can give you more details.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <img src="assets/images/blaze-services-2.svg" alt="">
                 </div>
             </div>
 
-            <div class="row gx-5 pt-50 d-flex align-items-center">
+            <div class="row gx-5 pt-100 d-flex align-items-center">
                 <div class="col-md-6">
                     <img src="assets/images/blaze-services-3.svg" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
@@ -227,12 +234,12 @@
         </div>
     </section>
 
-    <section class="app-card pt-100" id="supportedApp">
+    <section class="app-card pt-100 pb-100" id="supportedApp">
         <div class="container">
             <div class="section-title">
                 <h2>Supported Apps</h2>
             </div>
-            <div class="row g-4 pt-50 d-flex justify-content-center">
+            <div class="row g-4 pt-100 d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-app-card">
                         <div class="img-box">
@@ -241,8 +248,10 @@
                         <h4>Globally</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
-                            <a href="#"><i class="fa-brands fa-google-play"></i></a>
-                            <a href="#"><i class="fa-brands fa-apple"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments"
+                                target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                            <a href="https://apps.apple.com/us/app/skrill-pay-transfer-money/id718248239"
+                                target="_blank"><i class="fa-brands fa-apple"></i></a>
                         </div>
                     </div>
                 </div>
@@ -254,8 +263,10 @@
                         <h4>Uk, USA, ED & Canada</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
-                            <a href="#"><i class="fa-brands fa-google-play"></i></a>
-                            <a href="#"><i class="fa-brands fa-apple"></i></a>
+                            <a href="https://apps.apple.com/us/app/taptap-send-money-transfer/id1413346006"
+                                target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.taptapsend" target="_blank"><i
+                                    class="fa-brands fa-apple"></i></a>
                         </div>
                     </div>
                 </div>
@@ -267,7 +278,8 @@
                         <h4>Malaysia & Singapure</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
-                            <a href="#"><i class="fa-brands fa-google-play"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.tikfx.live" target="_blank"><i
+                                    class="fa-brands fa-google-play"></i></a>
                             <a href="#"><i class="fa-brands fa-apple"></i></a>
                         </div>
                     </div>
@@ -277,17 +289,18 @@
         </div>
     </section>
 
-    <section class="faq pt-100" id="faq">
+    <section class="faq pt-100 pb-200" id="faq">
         <div class="container">
             <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-                <div class="row">
+                <h2>If You Got Questions
+                    We Have Answer</h2>
+                <!-- <div class="row">
                     <div class="col-md-8 mx-auto">
-                        <!-- <p>Let your users send funds to any Bank account in Bangladesh.</p> -->
+                        <p>Let your users send funds to any Bank account in Bangladesh.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="row pt-50 pb-100">
+            <div class="row pt-100">
                 <div class="col-md-6">
                     <div class="faq-area">
                         <div class="accordion" id="accordionExample">
@@ -322,8 +335,8 @@
                                         <p>-- We are extending our partnership with global remittance
                                             companies/services.
                                             Currently you can use:
-                                            Taptap send: https://www.taptapsend.com,
-                                            Skrill: https://www.skrill.com/en/transfer-money</p>
+                                            Taptap send: <a href="">https://www.taptapsend.com</a>,
+                                            Skrill: <a href="#">https://www.skrill.com/en/transfer-money</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -343,16 +356,23 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="faq-area">
+                        <div class="accordion" id="accordionExample2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true"
                                         aria-controls="collapseFour">
                                         What remittance companies are going to be supported by Blaze?
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseFour" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>-- We are constantly extending our partnership with the leading remittance
                                             platforms. We are currently working with
@@ -362,78 +382,20 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="faq-area">
-                        <div class="accordion" id="accordionExample2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive" aria-expanded="true"
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
                                         I'm a local Bangladeshi bank, I want to connect to Blaze. What should I do?
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
                                         <p>-- Blaze is very easy to integrate. Please email us at blaze@homepay.io or
                                             contact us through the website. Our technical
                                             team will provide you necessary supports for the integration process.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        How much are not money transfer fee?
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                    data-bs-parent="#accordionExample2">
-                                    <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi
-                                            quo quisquam
-                                            reiciendis, laudantium aut neque dolorum rerum iusto fugit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeven" aria-expanded="false"
-                                        aria-controls="collapseSeven">
-                                        How much are money transfer fee?
-                                    </button>
-                                </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
-                                    <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
-                                            quidem sit,
-                                            blanditiis in odio tenetur officiis iste quas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingEight">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseEight" aria-expanded="false"
-                                        aria-controls="collapseEight">
-                                        How much are money transfer fee?
-                                    </button>
-                                </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse"
-                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
-                                    <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
-                                            quidem sit,
-                                            blanditiis in
-                                            odio tenetur officiis iste quas.</p>
                                     </div>
                                 </div>
                             </div>

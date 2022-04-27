@@ -83,12 +83,21 @@ p {
     padding-top: 100px;
 }
 
-.pt-50 {
-    padding-top: 50px;
+.pt-200{
+    padding-top: 200px;
 }
 
 .pb-100 {
     padding-bottom: 100px;
+}
+
+.pb-200{
+    padding-bottom: 200px;
+}
+
+.left-30 {
+    position: relative;
+    left: 30px;
 }
 
 .section-title {
@@ -106,7 +115,7 @@ p {
     font-weight: 600;
     color: var(--text-color);
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
     display: inline;
 }
 
@@ -114,18 +123,19 @@ p {
     content: "";
     position: absolute;
     height: 1px;
-    width: 100%;
-    background-color: #2D77A8A3;
+    width: 100px;
+    background-color: #adadad5e;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .section-title p {
     font-size: 20px;
     color: #333333A3;
-    padding-top: 50px;
+    padding-top: 40px;
+    margin: 0;
 }
 
 .btn {
@@ -143,7 +153,8 @@ p {
     box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
     border-radius: 10px;
     padding: 15px 50px;
-    margin-top: 15px;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 .btn-primary:hover {
@@ -234,6 +245,29 @@ p {
     height: auto !important;
     transition: .05s ease-in-out;
     height: 87px;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 1.2rem;
+    right: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: #212121;
+    margin: 0.4rem 0;
+    transition: 0.4s;
+}
+
+.menu-bar2 {
+    width: 20px;
+    margin-left: auto;
 }
 
 .home-nav{
@@ -422,9 +456,10 @@ p {
 } */
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     margin-top: 26px;
+    line-height: 35px;
 }
 
 .hero-btn {
@@ -446,8 +481,10 @@ p {
 .section-content p {
     font-size: 18px;
     color: #323847A3;
-    margin: 40px 0;
+    margin-top: 30px;
     line-height: 33px;
+    width: 90%;
+    text-align: justify;
 }
 
 /* =================== Service code End =================== */
@@ -528,6 +565,7 @@ p {
 
 .testimonial-title h2 {
     font-size: 36px;
+    margin-top: 20px;
 }
 
 .single-testimonial {
@@ -537,6 +575,7 @@ p {
     box-shadow: 0px 5px 14px rgba(8, 15, 52, 0.04);
     border-radius: 20px;
     padding: 30px 38px;
+    margin-top: 35px;
 }
 
 .single-testimonial:nth-child(odd) {
@@ -583,9 +622,9 @@ p {
     margin-top: 100px;
 }
 
-
 .contact-form h2 {
     font-size: 36px;
+    font-weight: 600;
     padding-bottom: 20px;
     position: relative;
 }
@@ -617,10 +656,11 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 8px;
+    margin-top: 10px !important;
 }
 
 .contact-form .form-area {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .contact-form input:focus,
@@ -647,6 +687,7 @@ p {
     width: 642px;
     height: 200px;
     border: 1px solid #ADADAD;
+    margin: 15px 0 25px 0;
 }
 
 .contact-form .flex-field {
@@ -655,7 +696,7 @@ p {
 }
 
 .contact-info {
-    margin-top: 60px;
+    padding-top: 75px;
 }
 
 .contact-info ul {
@@ -679,6 +720,8 @@ p {
 .contact-info ul li span {
     color: var(--primary-color);
     font-size: 30px;
+    padding-right: 20px;
+    width: 40px;
 }
 
 .contact-social {
@@ -785,6 +828,14 @@ p {
     height: 100vh;
 }
 
+.splash{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    right: 0;
+}
+
 .blaze-hero {
     position: absolute;
     top: 50%;
@@ -795,18 +846,22 @@ p {
 
 .blaze-hero h1 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 96px;
     color: var(--primary-color);
 }
 
 .blaze-hero h1 span {
+    font-size: 58px;
     color: #FFB048;
+    font-weight: 700;
 
 }
 
 .blaze-hero h1 .konnect {
     color: #F24B46;
+    font-size: 58px;
+    font-weight: 800;
 }
 
 .pulse-button {
@@ -823,7 +878,7 @@ p {
     border-radius: 50%;
     background-color: #081736;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 40px;
     -webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
     -moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
     -ms-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -843,7 +898,7 @@ p {
 }
 
 .play-active.pulse-button {
-    background-color: red;
+    background-color: #a30000;
 }
 
 .video-frame {
@@ -851,32 +906,37 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    /* height: 100%;
-    width: 100%; */
-    display: flex;
+    /* height: 70%; */
+    width: 100%;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    background-color: #1ab57f14;
+    align-items: center; */
+    z-index: 9999 !important;
+    /* background-color: #1ab57f14; */
     border-radius: 10px;
     /* padding: 10px; */
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
 }
 
 .video-frame video {
     border-radius: 10px;
-    /* height: 100%;
-    width: 100%; */
+    /* height: 100%; */
+    width: 100%;
 }
 
 .video-frame .close {
     position: absolute;
     top: 0;
-    right: -2rem;
+    right: 0;
     font-size: 30px;
-    background: none;
+    background: #2121217c;
+    color: #fff;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
     border: none;
     outline: none;
 }
@@ -944,6 +1004,7 @@ p {
 
 .single-blaze-services h3 {
     font-size: 30px;
+    font-weight: 500;
     position: relative;
     padding-bottom: 20px;
 }
@@ -969,18 +1030,17 @@ p {
 .single-blaze-services p {
     font-size: 18px;
     padding-top: 30px;
+    text-align: justify;
 }
 
 .app-card{
     background: url(../images/app-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 0;
     width: 100%;
 }
 
 .single-app-card {
-    margin-top: 50px;
     box-shadow: 0px 4px 30px #41414126;
     border-radius: 40px;
     padding: 25px 36px;
@@ -1059,9 +1119,10 @@ p {
 /* Animation */
 .circle-animation {
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: 5rem;
     animation: 3s round infinite ease-out;
+    z-index: 90;
 }
 
 @keyframes round {

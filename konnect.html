@@ -18,20 +18,25 @@
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand konnect-logo" href="#"><img src="assets/images/konnect-logo.png" alt=""></a>
-    
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> -->
+                    <div class="hamburger-menu">
+                        <div class="menu-bar1"></div>
+                        <div class="menu-bar2"></div>
+                        <div class="menu-bar3"></div>
+                    </div>
                 </button>
-    
+
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active-item">
                             <a class="nav-link" href="index.html"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about"> About Konnect </a>
+                            <a class="nav-link" href="#about"> Why Konnect </a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#whyKonnect"> Why Konnect </a>
@@ -56,10 +61,16 @@
         <img src="assets/images/shape-2.svg" alt="" class="shape shape-4">
         <div class="container">
             <div class="row">
+                <img src="assets/images/splash.png" alt="" class="splash">
                 <div class="col-lg-12">
-                    <div class="blaze-hero">
-                        <h1><span class="konnect">Konnect</span> a real-time, 24x7, 365 <br> days payment services in Bangladesh.</h1>
-                        <a href="#" class="pulse-button"><i class="fa-solid fa-play play"></i></a>
+                    <div class="blaze-hero konnect-hero">
+                        <h1><span class="konnect">Konnect</span> a real-time, 24x7, 365 <br> days payment services in
+                            Bangladesh.</h1>
+                            <p>A user can transfer funds to all the leading bank accounts in Bangladesh in seconds directly from the app or the
+                            platform. The following services are offered via Konnect.</p>
+                        <div class="pulse-area">
+                            <a class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
+                        </div>
                         <div class="video-frame">
                             <video src="assets/images/clip.mp4" controls class="video"></video>
                             <button class="close"><i class="fa-solid fa-xmark"></i></button>
@@ -72,9 +83,9 @@
     <!-- Hero Area End -->
 
     <!-- This section is off by ------------d-none----------- class -->
-    <section class="blaze-about-area pt-100 section position-relative d-none" id="about">
-        <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
-        <div class="container">
+    <section class="blaze-about-area pt-100 section position-relative" id="about">
+        <!-- <img src="assets/images/circle-bg.png" alt="" class="circle-animation"> -->
+        <div class="container d-none">
             <div class="section-title">
                 <h2>About Konnect</h2>
                 <div class="row">
@@ -112,69 +123,72 @@
             </div>
         </div>
 
-        <div class="why-choose-us pt-100" id="whyKonnect">
-            <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Why Konnect</h2>
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <p>Our values define us. They guide us in building and improving our product, hiring teammates,
-                                and serving our
-                                customers.</p>
-                        </div>
-                    </div>
+    <div class="why-choose-us pt-100 pb-200" id="whyBlaze">
+        <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
+        <img src="assets/images/shape-2.svg" alt="" class="tri-shape">
+        <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Konnect</h2>
+                <!-- <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <p>Our values define us. They guide us in building and improving our product, hiring
+                                    teammates,
+                                    and serving our
+                                    customers.</p>
+                            </div>
+                        </div> -->
+            </div>
+            <div class="choose-card pt-100">
+                <div class="single-choose-card">
+                    <img src="assets/images/choose-icon-1.png" alt="">
+                    <h3>Single API</h3>
+                    <p>100% payment coverage via single API.</p>
                 </div>
-                <div class="choose-card pt-100 pb-100">
-                    <div class="single-choose-card">
-                        <img src="assets/images/choose-icon-1.png" alt="">
-                        <h3>Single API</h3>
-                        <p>100% payment coverage via single API.</p>
-                    </div>
-                    <div class="single-choose-card">
-                        <img src="assets/images/choose-icon-2.png" alt="">
-                        <h3>Support KYC’ed</h3>
-                        <p>Get KYC’ed from an authentic government source.</p>
-                    </div>
-                    <div class="single-choose-card">
-                        <img src="assets/images/choose-icon-3.png" alt="">
-                        <h3>Direct FX</h3>
-                        <p>Select & Direct FX from a Selected bank.</p>
-                    </div>
-                    <div class="single-choose-card">
-                        <img src="assets/images/choose-icon-4.png" alt="">
-                        <h3>Support</h3>
-                        <p>24*7 365 days Support
-                            and immediate solution</p>
-                    </div>
-                    <div class="single-choose-card">
-                        <img src="assets/images/choose-icon-5.png" alt="">
-                        <h3>Relationship</h3>
-                        <p>Deep relationship and
-                            market knowledge</p>
-                    </div>
+                <div class="single-choose-card">
+                    <img src="assets/images/choose-icon-2.png" alt="">
+                    <h3>Support KYC’ed</h3>
+                    <p>Get KYC’ed from an authentic government source.</p>
+                </div>
+                <div class="single-choose-card">
+                    <img src="assets/images/choose-icon-3.png" alt="">
+                    <h3>Direct FX</h3>
+                    <p>Select & Direct FX from a Selected bank.</p>
+                </div>
+                <div class="single-choose-card">
+                    <img src="assets/images/choose-icon-4.png" alt="">
+                    <h3>Support</h3>
+                    <p>24*7 365 days Support
+                        and immediate solution</p>
+                </div>
+                <div class="single-choose-card">
+                    <img src="assets/images/choose-icon-5.png" alt="">
+                    <h3>Relationship</h3>
+                    <p>Deep relationship and
+                        market knowledge</p>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
-    <section class="blaze-services pt-100" id="services">
+    <section class="blaze-services pt-100 pb-100" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Our Services</h2>
-                <div class="row">
+                <h2>Our Services for Digital Payment Platforms</h2>
+                <!-- <div class="row">
                     <div class="col-md-8 mx-auto">
                         <p>Our values define us. They guide us in building and improving our product, hiring teammates,
                             and serving our customers.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
-            <div class="row pt-50 d-flex align-items-center">
+            <div class="row pt-100 d-flex align-items-center">
                 <div class="col-md-6">
                     <img src="assets/images/konnect-service-1.svg" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
@@ -184,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center column-rev">
+            <div class="row pt-100 d-flex align-items-center column-rev">
                 <div class="col-md-6">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
@@ -193,16 +207,16 @@
                             take a day. Our team can give you more details.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <img src="assets/images/konnect-service-2.svg" alt="">
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center">
+            <div class="row pt-100 d-flex align-items-center">
                 <div class="col-md-6">
                     <img src="assets/images/konnect-service-3.svg" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
@@ -212,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="row pt-50 d-flex align-items-center column-rev">
+            <div class="row pt-100 d-flex align-items-center column-rev">
                 <div class="col-md-6">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
@@ -221,7 +235,7 @@
                             take a day. Our team can give you more details.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 left-30">
                     <img src="assets/images/konnect-service-4.svg" alt="">
                 </div>
             </div>
@@ -229,17 +243,18 @@
         </div>
     </section>
 
-    <section class="faq pt-100 section" id="faq">
+    <section class="faq pt-100 pb-200" id="faq">
         <div class="container">
             <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-                <div class="row">
-                    <div class="col-md-8 mx-auto">
-                        <!-- <p>Let your users send funds to any Bank account in Bangladesh.</p> -->
-                    </div>
-                </div>
+                <h2>If You Got Questions
+                    We Have Answer</h2>
+                <!-- <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <p>Let your users send funds to any Bank account in Bangladesh.</p>
+                        </div>
+                    </div> -->
             </div>
-            <div class="row pt-50 pb-100">
+            <div class="row pt-100">
                 <div class="col-md-6">
                     <div class="faq-area">
                         <div class="accordion" id="accordionExample">
@@ -247,15 +262,17 @@
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How to send money online?
+                                        Is Blaze a remittance app? Can I download it anywhere?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quidem
-                                            quibusdam nihil libero
-                                            quod rerum sapiente nesciunt a maxime omnis?</p>
+                                        <p>-- No, Blaze is not a remittance app. Blaze is a service that connects global
+                                            remittance companies with 35+ banks in
+                                            Bangladesh. Once connected, money can be sent to Bangladesh within 5
+                                            seconds. Blaze runs 24 hours a day, 7 days a week
+                                            ensuring seamless financial service at your fingertips.</p>
                                     </div>
                                 </div>
                             </div>
@@ -263,131 +280,80 @@
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        How much are money transfer fee?
+                                        I'm Probashi/expatriate, how can I use Blaze service now?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi
-                                            quo quisquam reiciendis,
-                                            laudantium aut neque dolorum rerum iusto fugit.</p>
+                                        <p>-- We are extending our partnership with global remittance
+                                            companies/services.
+                                            Currently you can use:
+                                            Taptap send: <a href="">https://www.taptapsend.com</a>,
+                                            Skrill: <a href="#">https://www.skrill.com/en/transfer-money</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        How much are money transfer fee?
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What if my remittance company is not Blaze enabled?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
-                                            quidem sit, blanditiis in
-                                            odio tenetur officiis iste quas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                        How much are money transfer fee?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
-                                            quidem sit, blanditiis in
-                                            odio tenetur officiis iste quas.</p>
+                                        <p>-- You may use the apps above or also you can request your remittance company
+                                            to contact Blaze to use Blaze service.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-6">
                     <div class="faq-area">
                         <div class="accordion" id="accordionExample2">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFive">
+                                <h2 class="accordion-header" id="headingFour">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive" aria-expanded="true"
-                                        aria-controls="collapseFive">
-                                        How to send money online?
+                                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        What remittance companies are going to be supported by Blaze?
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+                                <div id="collapseFour" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quidem
-                                            quibusdam nihil
-                                            libero quod rerum sapiente nesciunt a maxime omnis?</p>
+                                        <p>-- We are constantly extending our partnership with the leading remittance
+                                            platforms. We are currently working with
+                                            Xoom, a PayPal service. The list is growing as Blaze is integrating with
+                                            many popular payment services.Please keep an
+                                            eye on our website and social media for live updates.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
+                                <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        How much are not money transfer fee?
+                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        I'm a local Bangladeshi bank, I want to connect to Blaze. What should I do?
                                     </button>
                                 </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi
-                                            quo quisquam
-                                            reiciendis, laudantium aut neque dolorum rerum iusto fugit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeven" aria-expanded="false"
-                                        aria-controls="collapseSeven">
-                                        How much are money transfer fee?
-                                    </button>
-                                </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
-                                    <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
-                                            quidem sit,
-                                            blanditiis in odio tenetur officiis iste quas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingEight">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseEight" aria-expanded="false"
-                                        aria-controls="collapseEight">
-                                        How much are money transfer fee?
-                                    </button>
-                                </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse"
-                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
-                                    <div class="accordion-body">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facilis porro
-                                            quidem sit,
-                                            blanditiis in
-                                            odio tenetur officiis iste quas.</p>
+                                        <p>-- Blaze is very easy to integrate. Please email us at blaze@homepay.io or
+                                            contact us through the website. Our technical
+                                            team will provide you necessary supports for the integration process.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </section>
