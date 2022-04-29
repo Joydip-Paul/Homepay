@@ -33,7 +33,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -83,7 +83,11 @@ p {
     padding-top: 100px;
 }
 
-.pt-200{
+.pt-100-hero {
+    padding-top: 100px;
+}
+
+.pt-200 {
     padding-top: 200px;
 }
 
@@ -91,7 +95,7 @@ p {
     padding-bottom: 100px;
 }
 
-.pb-200{
+.pb-200 {
     padding-bottom: 200px;
 }
 
@@ -115,16 +119,17 @@ p {
     font-weight: 600;
     color: var(--text-color);
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     display: inline;
 }
 
 .section-title h2::after {
     content: "";
     position: absolute;
-    height: 1px;
-    width: 100px;
-    background-color: #adadad5e;
+    height: 4px;
+    width: 64px;
+    border-radius: 4px;
+    background-color: #F9A646;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -143,22 +148,28 @@ p {
     outline: none;
     font-size: 18px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     outline: none;
     box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
     border-radius: 10px;
-    padding: 15px 50px;
+    padding: 15px 35px;
     margin-top: 16px;
     margin-bottom: 0;
 }
 
 .btn-primary:hover {
     background-color: #081736;
+}
+
+.arrow {
+    margin-left: 10px;
 }
 
 .btn-primary,
@@ -247,33 +258,6 @@ p {
     height: 87px;
 }
 
-.hamburger-menu {
-    position: fixed;
-    top: 1.2rem;
-    right: 2rem;
-    z-index: 10;
-    cursor: pointer;
-}
-
-.menu-bar1,
-.menu-bar2,
-.menu-bar3 {
-    width: 30px;
-    height: 2px;
-    background-color: #212121;
-    margin: 0.4rem 0;
-    transition: 0.4s;
-}
-
-.menu-bar2 {
-    width: 20px;
-    margin-left: auto;
-}
-
-.home-nav{
-    /* margin-top: 3rem; */
-}
-
 .nav-area {
     position: fixed;
     left: 0;
@@ -286,13 +270,13 @@ p {
     width: 100px;
 }
 
-.konnect-logo img{
+.konnect-logo img {
     width: 200px;
 }
 
 .navbar-nav li {
-    margin: 0 .5rem;
-    transition: 1s;
+    margin: 0 .6rem;
+    transition: .5s;
 }
 
 .nav-item:last-child {
@@ -322,10 +306,11 @@ p {
     content: "";
     position: absolute;
     bottom: -.5rem;
-    left: 0;
-    background-color: var(--primary-color);
-    height: 1px;
+    left: 2%;
+    background-color: #F9A646;
+    height: 4px;
     width: 100%;
+    border-radius: 100px;
 }
 
 .active .nav-link {
@@ -344,6 +329,9 @@ p {
 .hero-area {
     height: calc(100vh - 48px);
     position: relative;
+    background: url('/assets/images/splash.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-row {
@@ -369,9 +357,9 @@ p {
 } */
 
 .owl-dots {
-    margin-top: 50px;
+    margin-top: 90px;
     position: absolute;
-    bottom: -5rem;
+    bottom: -6rem;
     left: 49%;
     transform: translateX(-49%);
 }
@@ -381,14 +369,14 @@ p {
     transition: opacity .2s ease;
     border-radius: 30px;
     margin: 0 5px;
-    background-color: #1E335D4D;
+    background-color: #F0AA56;
     width: 20px;
     height: 12px;
     border-radius: 100px;
 }
 
 .owl-dots .owl-dot.active span {
-    background: #081736;
+    background: #1E335D33;
     width: 30px;
 }
 
@@ -419,6 +407,12 @@ p {
     transform: rotate(285deg);
 }
 
+.shape-5 {
+    top: 45%;
+    right: 12%;
+    transform: rotate(8deg);
+}
+
 .img-box {
     width: 624px;
 }
@@ -442,7 +436,7 @@ p {
 
 .hero-content h1 .home-pay {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .hero-content h1 .heading-bg {
@@ -471,7 +465,7 @@ p {
 
 /* =================== 4. Service code Start =================== */
 .service-area {
-    background: linear-gradient(-17deg, #e3edfb 0%, #ffffff 98%);
+    background: linear-gradient(-17deg, #e4edfc 0%, #e4edfc96 98%);
 }
 
 .section-content img {
@@ -487,10 +481,14 @@ p {
     text-align: justify;
 }
 
+.konnect img {
+    width: 300px;
+}
+
 /* =================== Service code End =================== */
 
 /* =================== 5. Choose us code Start =================== */
-.why-choose-us{
+.why-choose-us {
     position: relative;
 }
 
@@ -504,11 +502,11 @@ p {
     border: 1px solid #08173611;
     border-radius: 4px;
     margin: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     transition: .5s;
 }
 
-.single-choose-card:hover{
+.single-choose-card:hover {
     border: 1px solid #08173660;
 }
 
@@ -518,7 +516,7 @@ p {
 }
 
 .single-choose-card p {
-    font-size: 16px;
+    font-size: 14px;
     color: #233443;
 }
 
@@ -530,13 +528,13 @@ p {
     position: relative;
 }
 
-.ellipse-shape{
+.ellipse-shape {
     position: absolute;
     top: 120px;
     right: 0;
 }
 
-.tri-shape{
+.tri-shape {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -565,6 +563,7 @@ p {
 
 .testimonial-title h2 {
     font-size: 36px;
+    font-weight: 600;
     margin-top: 20px;
 }
 
@@ -592,13 +591,19 @@ p {
     align-items: center;
 }
 
-.profile img {
-    width: 100px;
+.dp-img {
+    width: 60px;
+    height: 60px;
     background-color: #E6E4FF;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
 }
 
 .name {
@@ -611,7 +616,8 @@ p {
 }
 
 .name h4 {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     color: #6F6C90;
 }
 
@@ -651,12 +657,13 @@ p {
     border-radius: 50%;
 }
 
-.contact-form small {
+.contact-form h4 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 8px;
-    margin-top: 10px !important;
+    letter-spacing: 5px;
+    opacity: 0.7;
+    padding-top: 14px;
 }
 
 .contact-form .form-area {
@@ -676,7 +683,8 @@ p {
 
 .form-area input::placeholder,
 .form-area textarea::placeholder {
-    color: #40A4DB;
+    color: #212121;
+    opacity: 0.4;
 }
 
 .form-area textarea,
@@ -685,6 +693,7 @@ p {
     box-sizing: border-box;
     border-radius: 10px;
     width: 642px;
+    padding: 15px;
     height: 200px;
     border: 1px solid #ADADAD;
     margin: 15px 0 25px 0;
@@ -706,22 +715,26 @@ p {
 }
 
 .contact-info ul li {
-    margin: 20px 0;
-    font-size: 16px;
+    margin: 10px 0;
     font-weight: 300;
     display: flex;
-    gap: 20px;
 }
 
-.contact-info ul li p{
+.contact-info ul li p {
     color: var(--text-color);
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .contact-info ul li span {
     color: var(--primary-color);
-    font-size: 30px;
-    padding-right: 20px;
-    width: 40px;
+    font-size: 25px;
+}
+
+.contact-info ul li .address {
+    margin-left: 25px;
+    margin-top: 0;
 }
 
 .contact-social {
@@ -828,7 +841,7 @@ p {
     height: 100vh;
 }
 
-.splash{
+.splash {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -847,21 +860,26 @@ p {
 .blaze-hero h1 {
     font-size: 48px;
     font-weight: 600;
-    line-height: 96px;
+    line-height: 80px;
+    margin-top: 50px;
     color: var(--primary-color);
 }
 
 .blaze-hero h1 span {
-    font-size: 58px;
+    font-size: 74px;
+    font-weight: 600;
     color: #FFB048;
-    font-weight: 700;
-
 }
 
 .blaze-hero h1 .konnect {
     color: #F24B46;
-    font-size: 58px;
-    font-weight: 800;
+    font-size: 74px;
+    font-weight: 600;
+}
+
+.blaze-hero p {
+    font-size: 20px;
+    line-height: 35px;
 }
 
 .pulse-button {
@@ -928,8 +946,8 @@ p {
 
 .video-frame .close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     font-size: 30px;
     background: #2121217c;
     color: #fff;
@@ -971,7 +989,7 @@ p {
     }
 }
 
-.blaze-about-area{
+.blaze-about-area {
     background: linear-gradient(347deg, #e3edfb 0%, #ffffff 98%);
 }
 
@@ -998,13 +1016,14 @@ p {
     background-image: linear-gradient(to right, #f3f3f3, #ffff);
 }
 
-.blaze-services{
+.blaze-services {
     background: linear-gradient(150deg, #e3edfb 0%, #ffffff 98%);
 }
 
 .single-blaze-services h3 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
     position: relative;
     padding-bottom: 20px;
 }
@@ -1022,21 +1041,23 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 40%;
+    width: 32%;
     height: 1px;
-    background-color: #926cff96;
+    background-color: #c0c0c0cc;
 }
 
 .single-blaze-services p {
     font-size: 18px;
-    padding-top: 30px;
+    padding-top: 20px;
+    line-height: 30px;
     text-align: justify;
 }
 
-.app-card{
+.app-card {
     background: url(../images/app-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
 }
 
@@ -1049,7 +1070,7 @@ p {
     /* height: 342px; */
 }
 
-.single-app-card .img-box{
+.single-app-card .img-box {
     width: 200px;
     height: 40px;
     margin: 0 auto;
@@ -1071,7 +1092,7 @@ p {
     margin: 7px;
 }
 
-.faq-area{
+.faq-area {
     margin-top: 50px;
 }
 
@@ -1102,7 +1123,7 @@ p {
 
 .accordion-item {
     background: #FFFFFF;
-    box-shadow: 0px 4px 30px rgba(99, 105, 225, 0.26);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     border-radius: 10px !important;
     border: none;
     margin: 20px 0;
@@ -1119,7 +1140,7 @@ p {
 /* Animation */
 .circle-animation {
     position: absolute;
-    top: -10%;
+    top: -60%;
     right: 5rem;
     animation: 3s round infinite ease-out;
     z-index: 90;

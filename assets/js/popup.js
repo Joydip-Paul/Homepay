@@ -7,7 +7,7 @@ let vid = document.querySelector('.video');
 let body = document.querySelector('.blaze-services');
 let hero = document.querySelector('.blaze-hero h1');
 let hero2 = document.querySelector('.blaze-hero p');
-let pulse = document.querySelector('.pulse-area');
+var pulseBtn = document.querySelector('.pulse-area');
 
 play.onclick = function () {
     play.classList.add('play-active');
@@ -16,7 +16,7 @@ play.onclick = function () {
     videoClip.currentTime = 0;
     hero.style.opacity = "0";
     hero2.style.opacity = "0";
-    pulse.style.opacity = "0";
+    pulseBtn.style.opacity = "0";
 }
 
 close.onclick = function () {
@@ -25,7 +25,7 @@ close.onclick = function () {
     videoClip.pause();
     hero.style.opacity = "1";
     hero2.style.opacity = "1";
-    pulse.style.opacity = "1";
+    pulseBtn.style.opacity = "1";
 }
 
 body.onclick = function () {
@@ -34,5 +34,11 @@ body.onclick = function () {
     videoClip.pause();
     hero.style.opacity = "1";
     hero2.style.opacity = "1";
-    pulse.style.opacity = "1";
+    pulseBtn.style.opacity = "1";
 }
+
+// var bar1 = document.querySelector('.menu-bar1');
+
+// bar1.onclick = function () {
+//     bar1.style.rotate = "20deg";
+// }

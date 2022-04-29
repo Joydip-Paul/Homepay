@@ -51,12 +51,12 @@ $(document).ready(function () {
     })
 
     $('#carousel-2').owlCarousel({
-        loop: true,
+        loop: false,
         nav: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1200,
         transitionStyle: "fade",
-        dots: true,
+        dots: false,
         // navText: ["<div class='nav-btn prev-slide'></div>",
         //     "<div class='nav-btn next-slide'></div>"],
         responsive: {

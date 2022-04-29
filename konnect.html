@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konnect</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -22,12 +23,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> -->
-                    <div class="hamburger-menu">
-                        <div class="menu-bar1"></div>
-                        <div class="menu-bar2"></div>
-                        <div class="menu-bar3"></div>
-                    </div>
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
@@ -66,8 +62,10 @@
                     <div class="blaze-hero konnect-hero">
                         <h1><span class="konnect">Konnect</span> a real-time, 24x7, 365 <br> days payment services in
                             Bangladesh.</h1>
-                            <p>A user can transfer funds to all the leading bank accounts in Bangladesh in seconds directly from the app or the
-                            platform. The following services are offered via Konnect.</p>
+                        <p class="pt-2">A user can transfer funds to all the leading bank accounts in Bangladesh <br> in
+                            seconds directly
+                            from the app or the
+                            platform. The following </br> services are offered via Konnect.</p>
                         <div class="pulse-area">
                             <a class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
                         </div>
@@ -123,14 +121,15 @@
             </div>
         </div>
 
-    <div class="why-choose-us pt-100 pb-200" id="whyBlaze">
-        <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
-        <img src="assets/images/shape-2.svg" alt="" class="tri-shape">
-        <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose Konnect</h2>
-                <!-- <div class="row">
+        <div class="why-choose-us pt-100-hero pb-200" id="whyBlaze">
+            <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
+            <img src="assets/images/shape-2.svg" alt="" class="tri-shape">
+            <img src="assets/images/shape-2.svg" alt="" class="shape shape-5">
+            <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose Konnect</h2>
+                    <!-- <div class="row">
                             <div class="col-md-8 mx-auto">
                                 <p>Our values define us. They guide us in building and improving our product, hiring
                                     teammates,
@@ -138,38 +137,38 @@
                                     customers.</p>
                             </div>
                         </div> -->
-            </div>
-            <div class="choose-card pt-100">
-                <div class="single-choose-card">
-                    <img src="assets/images/choose-icon-1.png" alt="">
-                    <h3>Single API</h3>
-                    <p>100% payment coverage via single API.</p>
                 </div>
-                <div class="single-choose-card">
-                    <img src="assets/images/choose-icon-2.png" alt="">
-                    <h3>Support KYC’ed</h3>
-                    <p>Get KYC’ed from an authentic government source.</p>
-                </div>
-                <div class="single-choose-card">
-                    <img src="assets/images/choose-icon-3.png" alt="">
-                    <h3>Direct FX</h3>
-                    <p>Select & Direct FX from a Selected bank.</p>
-                </div>
-                <div class="single-choose-card">
-                    <img src="assets/images/choose-icon-4.png" alt="">
-                    <h3>Support</h3>
-                    <p>24*7 365 days Support
-                        and immediate solution</p>
-                </div>
-                <div class="single-choose-card">
-                    <img src="assets/images/choose-icon-5.png" alt="">
-                    <h3>Relationship</h3>
-                    <p>Deep relationship and
-                        market knowledge</p>
+                <div class="choose-card pt-100" data-aos="fade-up">
+                    <div class="single-choose-card">
+                        <img src="assets/images/choose-icon-1.png" alt="">
+                        <h3>Single API</h3>
+                        <p>100% payment coverage via single API.</p>
+                    </div>
+                    <div class="single-choose-card">
+                        <img src="assets/images/choose-icon-2.png" alt="">
+                        <h3>Support KYC’ed</h3>
+                        <p>Get KYC’ed from an authentic government source.</p>
+                    </div>
+                    <div class="single-choose-card">
+                        <img src="assets/images/choose-icon-3.png" alt="">
+                        <h3>Direct FX</h3>
+                        <p>Select & Direct FX from a Selected bank.</p>
+                    </div>
+                    <div class="single-choose-card">
+                        <img src="assets/images/choose-icon-4.png" alt="">
+                        <h3>Support</h3>
+                        <p>24*7 365 days Support
+                            and immediate solution</p>
+                    </div>
+                    <div class="single-choose-card">
+                        <img src="assets/images/choose-icon-5.png" alt="">
+                        <h3>Relationship</h3>
+                        <p>Deep relationship and
+                            market knowledge</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <section class="blaze-services pt-100 pb-100" id="services">
@@ -185,12 +184,12 @@
             </div>
 
             <div class="row pt-100 d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <img src="assets/images/konnect-service-1.svg" alt="">
                 </div>
                 <div class="col-md-6 left-30">
                     <div class="single-blaze-services">
-                        <h3>Send Money Directly To Any Bank Account Instant</h3>
+                        <h3>Send To Bank Account</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
                             instant deposits while some
                             take a day. Our team can give you more details.</p>
@@ -201,24 +200,24 @@
             <div class="row pt-100 d-flex align-items-center column-rev">
                 <div class="col-md-6">
                     <div class="single-blaze-services">
-                        <h3>Send Money Directly To Any Bank Account Instant</h3>
-                        <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
-                            instant deposits while some
-                            take a day. Our team can give you more details.</p>
+                        <h3>Send To Card</h3>
+                        <p>160 million + mobile phones in the country. Send money to any mobile phone in seconds! Truly
+                            a unique capability that
+                            will make your service stand out.</p>
                     </div>
                 </div>
-                <div class="col-md-6 left-30">
+                <div class="col-md-6 left-30" data-aos="fade-left">
                     <img src="assets/images/konnect-service-2.svg" alt="">
                 </div>
             </div>
 
             <div class="row pt-100 d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <img src="assets/images/konnect-service-3.svg" alt="">
                 </div>
                 <div class="col-md-6 left-30">
                     <div class="single-blaze-services">
-                        <h3>Send Money Directly To Any Bank Account Instant</h3>
+                        <h3>Add from Card</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
                             instant deposits while some
                             take a day. Our team can give you more details.</p>
@@ -230,13 +229,13 @@
                 <div class="col-md-6">
                     <div class="single-blaze-services">
                         <h3>Send Money Directly To Any Bank Account Instant</h3>
-                        <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
-                            instant deposits while some
-                            take a day. Our team can give you more details.</p>
+                        <p>Verify, Authenticate, and fully KYC any Bangladeshi resident for quick onboarding into your
+                            platform or to ensure
+                            compliance during payout..</p>
                     </div>
                 </div>
                 <div class="col-md-6 left-30">
-                    <img src="assets/images/konnect-service-4.svg" alt="">
+                    <img src="assets/images/konnect-service-4.svg" alt="" data-aos="fade-left">
                 </div>
             </div>
 
@@ -246,8 +245,7 @@
     <section class="faq pt-100 pb-200" id="faq">
         <div class="container">
             <div class="section-title">
-                <h2>If You Got Questions
-                    We Have Answer</h2>
+                <h2>Frequently Asked Questions</h2>
                 <!-- <div class="row">
                         <div class="col-md-8 mx-auto">
                             <p>Let your users send funds to any Bank account in Bangladesh.</p>
@@ -265,8 +263,8 @@
                                         Is Blaze a remittance app? Can I download it anywhere?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>-- No, Blaze is not a remittance app. Blaze is a service that connects global
                                             remittance companies with 35+ banks in
@@ -297,12 +295,13 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
                                         What if my remittance company is not Blaze enabled?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>-- You may use the apps above or also you can request your remittance company
                                             to contact Blaze to use Blaze service.</p>
@@ -312,19 +311,20 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="col-md-6">
                     <div class="faq-area">
                         <div class="accordion" id="accordionExample2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
                                         What remittance companies are going to be supported by Blaze?
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
                                         <p>-- We are constantly extending our partnership with the leading remittance
                                             platforms. We are currently working with
@@ -337,7 +337,8 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
                                         I'm a local Bangladeshi bank, I want to connect to Blaze. What should I do?
                                     </button>
                                 </h2>
@@ -353,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
@@ -368,10 +369,13 @@
                             <h3>Contact Info</h3>
                             <div class="address-area">
                                 Address : <br>
-                                <p>House 37, Flat A4, Road 27, Block-A Banani, Dhaka 1213,Bangladesh</p>
+                                <p>24Nme LLC <br>
+                                    35640 Fremont Blvd#336 <br>
+                                    Fremont, California 94536
+                                    USA</p>
                                 <div class="number-email">
-                                    Phone :<a href="">(+880) 9610-500500</a> <br>
-                                    Email:<a href="#"> info@homepay.com</a>
+                                    Phone :<a href="" class="text-white">+ 510-936-2452</a> <br>
+                                    E-mail :<a href="#"> blaze@homepay.io</a>
                                 </div>
                             </div>
                         </div>
@@ -380,19 +384,17 @@
                         <div class="single-footer">
                             <h3>Support</h3>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#about">Why Choose Konnect</a></li>
+                                <li><a href="#services">Our Services</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer">
-                            <h3>My Account</h3>
+                            <h3>Products</h3>
                             <ul>
-                                <li><a href="#">Log In</a></li>
-                                <li><a href="#">Track History</a></li>
-                                <li><a href="#">My Whislist</a></li>
+                                <li><a href="blaze.html">Blaze</a></li>
+                                <li><a href="konnect.html">Konnect</a></li>
                             </ul>
                         </div>
                     </div>
@@ -402,16 +404,16 @@
                             <div class="footer-social">
                                 <ul>
                                     <li>
-                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span>Linkedin</a>
+                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span>Facebook</a>
                                     </li>
                                     <li>
                                         <a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span>Linkedin</a>
                                     </li>
                                     <li>
-                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span>Linkedin</a>
+                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span>Twitter</a>
                                     </li>
                                     <li>
-                                        <a href="#"><span><i class="fa-brands fa-pinterest"></i></span>Linkedin</a>
+                                        <a href="#"><span><i class="fa-brands fa-pinterest"></i></span>Pinterest</a>
                                     </li>
                                 </ul>
                             </div>
@@ -423,7 +425,7 @@
 
         <hr class="hr">
         <div class="copyright">
-            <p>Copyright <span id="year" class="mx-1"></span> money Transfer | Designed By Home-Pay</p>
+            <p>&copy; <span id="year" class="mx-1"></span>HomePay. All Rights Reserved By HomePay</p>
         </div>
     </footer>
     <!-- Footer -->
@@ -431,7 +433,15 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
     <script src="assets/js/jquery-1.12.0.min.js"></script>
     <script src="assets/js/owl-carousel.min.js"></script>
     <script src="assets/js/popup.js"></script>

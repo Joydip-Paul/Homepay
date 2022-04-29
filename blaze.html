@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaze</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -22,12 +23,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> -->
-                    <div class="hamburger-menu">
-                        <div class="menu-bar1"></div>
-                        <div class="menu-bar2"></div>
-                        <div class="menu-bar3"></div>
-                    </div>
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
@@ -62,6 +58,7 @@
         <img src="assets/images/shape1.png" alt="" class="shape shape-2">
         <img src="assets/images/shape-2.svg" alt="" class="shape shape-3">
         <img src="assets/images/shape-2.svg" alt="" class="shape shape-4">
+        <img src="assets/images/shape-2.svg" alt="" class="shape shape-5">
         <div class="container">
             <div class="row">
                 <img src="assets/images/splash.png" alt="" class="splash">
@@ -73,10 +70,7 @@
                             <a class="pulse-button playBtn"><i class="fa-solid fa-play play"></i></a>
                         </div>
                         <div class="video-frame">
-                            <video controls class="video">
-                                <source src="assets/images/clip.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <video src="assets/images/clip.mp4" controls class="video"></video>
                             <button class="close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                     </div>
@@ -87,7 +81,7 @@
     <!-- Hero Area End -->
 
     <!-- This section is off by ------------d-none----------- class -->
-    <section class="blaze-about-area pt-100 section position-relative" id="about">
+    <section class="blaze-about-area pt-100 position-relative" id="about">
         <!-- <img src="assets/images/circle-bg.png" alt="" class="circle-animation"> -->
         <div class="container d-none">
             <div class="section-title">
@@ -127,7 +121,7 @@
             </div>
         </div>
 
-        <div class="why-choose-us pt-100 pb-200" id="whyBlaze">
+        <div class="why-choose-us pt-100-hero" id="whyBlaze">
             <img src="assets/images/elipse.png" alt="" class="ellipse-shape">
             <img src="assets/images/shape-2.svg" alt="" class="tri-shape">
             <img src="assets/images/circle-bg.png" alt="" class="circle-animation">
@@ -143,7 +137,7 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="choose-card pt-100">
+                <div class="choose-card pt-100" data-aos="fade-up">
                     <div class="single-choose-card">
                         <img src="assets/images/choose-icon-1.png" alt="">
                         <h3>Single API</h3>
@@ -189,12 +183,12 @@
             </div>
 
             <div class="row gx-5 pt-100 d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right pt-4">
                     <img src="assets/images/blaze-services-1.svg" alt="" loading="lazy">
                 </div>
-                <div class="col-md-6 left-30">
+                <div class="col-md-6 left-30 pt-4">
                     <div class="single-blaze-services">
-                        <h3>Send Money Directly To Any Bank Account Instant</h3>
+                        <h3>Send Money Directly To Any <br> Bank Account</h3>
                         <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
                             instant deposits while some
                             take a day. Our team can give you more details.</p>
@@ -203,29 +197,29 @@
             </div>
 
             <div class="row pt-100  d-flex align-items-center column-rev">
-                <div class="col-md-6">
+                <div class="col-md-6 pt-4">
                     <div class="single-blaze-services">
-                        <h3>Send Money Directly To Any Bank Account Instant</h3>
-                        <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
-                            instant deposits while some
-                            take a day. Our team can give you more details.</p>
+                        <h3>Send Money Directly To Any <br> Mobile Number</h3>
+                        <p>160 million + mobile phones in the country. Send money to any mobile phone in seconds! Truly
+                            a unique capability that
+                            will make your service stand out.</p>
                     </div>
                 </div>
-                <div class="col-md-6 left-30">
+                <div class="col-md-6 left-30 pt-4" data-aos="fade-left">
                     <img src="assets/images/blaze-services-2.svg" alt="">
                 </div>
             </div>
 
             <div class="row gx-5 pt-100 d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 pt-4" data-aos="fade-right">
                     <img src="assets/images/blaze-services-3.svg" alt="">
                 </div>
-                <div class="col-md-6 left-30">
+                <div class="col-md-6 left-30 pt-4">
                     <div class="single-blaze-services">
-                        <h3>Send Money Directly To Any Bank Account Instant</h3>
-                        <p>Let your users send funds to any Bank account in Bangladesh. Some of the largest banks are
-                            instant deposits while some
-                            take a day. Our team can give you more details.</p>
+                        <h3>Send Money Directly To Any <br> Bangladeshi (eKYC)</h3>
+                        <p>Verify, Authenticate, and fully KYC any Bangladeshi resident for quick onboarding into your
+                            platform or to ensure
+                            compliance during payout..</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +231,7 @@
     <section class="app-card pt-100 pb-100" id="supportedApp">
         <div class="container">
             <div class="section-title">
-                <h2>Supported Apps</h2>
+                <h2>Blaze Enabled Apps</h2>
             </div>
             <div class="row g-4 pt-100 d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6">
@@ -263,10 +257,10 @@
                         <h4>Uk, USA, ED & Canada</h4>
                         <p>It works all over the world with proper rules and regulations</p>
                         <div class="download-app">
-                            <a href="https://apps.apple.com/us/app/taptap-send-money-transfer/id1413346006"
-                                target="_blank"><i class="fa-brands fa-google-play"></i></a>
                             <a href="https://play.google.com/store/apps/details?id=com.taptapsend" target="_blank"><i
-                                    class="fa-brands fa-apple"></i></a>
+                                    class="fa-brands fa-google-play"></i></a>
+                            <a href="https://apps.apple.com/us/app/taptap-send-money-transfer/id1413346006"
+                                target="_blank"><i class="fa-brands fa-apple"></i></a>
                         </div>
                     </div>
                 </div>
@@ -292,8 +286,7 @@
     <section class="faq pt-100 pb-200" id="faq">
         <div class="container">
             <div class="section-title">
-                <h2>If You Got Questions
-                    We Have Answer</h2>
+                <h2>Frequently Asked Questions</h2>
                 <!-- <div class="row">
                     <div class="col-md-8 mx-auto">
                         <p>Let your users send funds to any Bank account in Bangladesh.</p>
@@ -372,7 +365,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
                                     <div class="accordion-body">
                                         <p>-- We are constantly extending our partnership with the leading remittance
                                             platforms. We are currently working with
@@ -417,10 +410,13 @@
                             <h3>Contact Info</h3>
                             <div class="address-area">
                                 Address : <br>
-                                <p>House 37, Flat A4, Road 27, Block-A Banani, Dhaka 1213,Bangladesh</p>
+                                <p>24Nme LLC <br>
+                                    35640 Fremont Blvd#336 <br>
+                                    Fremont, California 94536
+                                    USA</p>
                                 <div class="number-email">
-                                    Phone :<a href="">(+880) 9610-500500</a> <br>
-                                    Email:<a href="#"> info@homepay.com</a>
+                                    Phone :<a href="" class="text-white">+ 510-936-2452</a> <br>
+                                    E-mail :<a href="#"> blaze@homepay.io</a>
                                 </div>
                             </div>
                         </div>
@@ -429,19 +425,18 @@
                         <div class="single-footer">
                             <h3>Support</h3>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#about">Why Choose Blaze</a></li>
+                                <li><a href="#services">Our Services</a></li>
+                                <li><a href="#supportedApp">Suported Apps</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer">
-                            <h3>My Account</h3>
+                            <h3>Products</h3>
                             <ul>
-                                <li><a href="#">Log In</a></li>
-                                <li><a href="#">Track History</a></li>
-                                <li><a href="#">My Whislist</a></li>
+                                <li><a href="blaze.html">Blaze</a></li>
+                                <li><a href="konnect.html">Konnect</a></li>
                             </ul>
                         </div>
                     </div>
@@ -451,16 +446,16 @@
                             <div class="footer-social">
                                 <ul>
                                     <li>
-                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span>Linkedin</a>
+                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span>Facebook</a>
                                     </li>
                                     <li>
                                         <a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span>Linkedin</a>
                                     </li>
                                     <li>
-                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span>Linkedin</a>
+                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span>Twitter</a>
                                     </li>
                                     <li>
-                                        <a href="#"><span><i class="fa-brands fa-pinterest"></i></span>Linkedin</a>
+                                        <a href="#"><span><i class="fa-brands fa-pinterest"></i></span>Pinterest</a>
                                     </li>
                                 </ul>
                             </div>
@@ -472,14 +467,22 @@
 
         <hr class="hr">
         <div class="copyright">
-            <p>Copyright <span id="year" class="mx-1"></span> money Transfer | Designed By Home-Pay</p>
+            <p>&copy; <span id="year" class="mx-1"></span>HomePay. All Rights Reserved By HomePay</p>
         </div>
     </footer>
     <!-- Footer -->
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
     <script src="assets/js/jquery-1.12.0.min.js"></script>
     <script src="assets/js/owl-carousel.min.js"></script>
     <script src="assets/js/popup.js"></script>

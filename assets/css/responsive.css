@@ -10,6 +10,11 @@
 /* ===================================
    Media Queries
 ====================================== */
+@media only screen and (max-width: 1550px) {
+    .hero-row {
+        padding-top: 240;
+    }
+}
 
 @media only screen and (max-width: 1400px) {
     .img-box {
@@ -115,10 +120,6 @@
         width: 100% !important;
     }
 
-    /* .video-frame {
-        height: 300px;
-        width: 600px;
-    } */
 
     .choose-card {
         grid-template-columns: repeat(3, 1fr);
@@ -128,9 +129,11 @@
         left: 0;
         bottom: 10px;
     }
+
     .konnect-hero h1 {
         font-size: 30px;
     }
+
     .konnect-hero h1 .konnect {
         font-size: 42px;
     }
@@ -159,13 +162,15 @@
     .single-blaze-services h3 {
         font-size: 16px;
     }
+
     .section-title h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .section-title p {
         font-size: 16px;
     }
+
     .navbar {
         padding: 1rem 0;
     }
@@ -233,7 +238,7 @@
         font-size: 22px;
     }
 
-    .konnect-hero p{
+    .konnect-hero p {
         font-size: 14px;
         padding-top: 10px;
     }
@@ -246,16 +251,16 @@
         margin: .2rem 0;
     }
 
-    /* .circle-animation {
-        top: 1%;
-        width: 20%;
-    } */
+    .circle-animation {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .splash{
+    .splash {
         display: none;
     }
+
     .video-frame {
         top: 25%;
     }
@@ -279,7 +284,7 @@
     }
 
     .blaze-hero-area {
-        height: 60vh !important;
+        height: 65vh !important;
     }
 
     .blaze-hero {
@@ -310,10 +315,6 @@
         padding-top: 50px;
     }
 
-    /* .circle-animation {
-        width: 20%;
-    } */
-
     .pulse-button {
         width: 60px;
         height: 60px;
@@ -331,10 +332,6 @@
         width: 70%;
     }
 
-    .section-title h2 {
-        font-size: 26px;
-    }
-
     .section-title p {
         font-size: 16px;
         padding-top: 16px;
@@ -350,6 +347,10 @@
 
     .hero-row .img-box {
         width: 519px;
+    }
+
+    .hero-content h1 {
+        line-height: 45px;
     }
 
     .section-content {
@@ -375,30 +376,42 @@
     .section-title h2::after {
         bottom: 21px;
     }
-    .left-30{
+
+    .left-30 {
         left: 0;
     }
+
     .section-title h2 {
-        font-size: 18px;
         padding-bottom: 40px;
     }
+
     .pt-100 {
         padding-top: 60px;
     }
-    
+
     .pt-200 {
         padding-top: 100px;
     }
-    
+
     .pb-100 {
         padding-bottom: 60px;
     }
-    
+
     .pb-200 {
         padding-bottom: 100px;
     }
+
     .blaze-hero h1 span {
         font-size: 28px;
+    }
+
+    .blaze-hero h1 {
+        margin-top: 0;
+    }
+
+    .blaze-hero p {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
@@ -409,7 +422,8 @@
     }
 
     .video-frame {
-        width: 80%;
+        margin-top: 110px;
+        width: 100%;
     }
 
     .hero-area {
@@ -456,22 +470,55 @@
     .owl-dots .owl-dot.active span {
         width: 20px;
     }
-    .circle-animation{
-        display: none;
-    }
+
     .section-title h2 {
-        font-size: 16px;
         padding-bottom: 40px;
+        line-height: 35px;
     }
+
+    .pt-100 {
+        padding-top: 50px;
+    }
+
     .blaze-hero h1 {
         font-size: 18px;
+    }
+
+    .hero-content p {
+        margin-top: 20px;
+        line-height: 25px;
+    }
+
+    .testimonial-title h2 {
+        padding-bottom: 30px;
+    }
+
+    .owl-dots {
+        bottom: -3rem;
+    }
+
+    .splash {
+        display: none !important;
+    }
+
+    .section-content p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .single-app-card {
+        padding: 25px 10px;
+        margin: 0 10px;
+    }
+
+    .single-footer h3 {
+        padding-bottom: 12px;
+        margin-top: 10px;
     }
 }
 
 @media(max-width: 440px) {
-    .konnect-hero h1 .konnect {
-        font-size: 28px;
-    }
+
     .go-top {
         display: none !important;
     }
@@ -490,7 +537,11 @@
     }
 
     .blaze-hero-area {
-        height: 65vh !important;
+        height: 68vh !important;
+    }
+
+    .pt-100-hero{
+        padding-top: 10px;
     }
 
     .konnect-hero h1 {
@@ -507,10 +558,6 @@
     }
 
     .hero-content h1 .home-pay {
-        font-size: 26px;
-    }
-
-    .hero-content h1 .bd {
         font-size: 26px;
     }
 
@@ -565,7 +612,7 @@
         padding-bottom: 1rem;
     }
 
-    .contact-form small {
+    .contact-form h4 {
         font-size: 12px;
         letter-spacing: 6px;
     }
@@ -592,7 +639,7 @@
     }
 
     .video-frame {
-        width: 75%;
+        width: 95%;
         top: 25%;
     }
 
@@ -625,7 +672,8 @@
     .single-blaze-about p {
         font-size: 14px;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         margin-top: 1rem;
     }
 
@@ -635,6 +683,10 @@
 
     .img-box {
         width: 333px !important;
+    }
+
+    .blaze-hero p {
+        font-size: 10px;
     }
 
     @-webkit-keyframes pulse {
@@ -663,6 +715,31 @@
 
     .service-area {
         padding-top: 5rem;
+    }
+
+    .hero-content p {
+        line-height: 22px;
+    }
+
+    .hero-content h1 {
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .hero-content h1 .bd {
+        font-size: 18px;
+    }
+
+    .hero-row {
+        padding-top: 115px;
+    }
+
+    .konnect-hero h1 .konnect {
+        font-size: 26px;
+    }
+
+    .konnect-hero h1 {
+        font-size: 20px;
     }
 }
 

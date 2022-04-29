@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePay</title>
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -54,17 +55,12 @@
     <nav class="nav-area" id="navbar_top">
         <div class="navbar navbar-expand-lg home-nav">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/hp.png" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/homepay-logo.png" alt=""></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> -->
-                    <div class="hamburger-menu">
-                        <div class="menu-bar1"></div>
-                        <div class="menu-bar2"></div>
-                        <div class="menu-bar3"></div>
-                    </div>
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
@@ -89,7 +85,7 @@
     <!-- Navbar Area -->
 
     <!-- Hero Area Start -->
-    <section class="hero-area">
+    <section class="hero-area" id="hero">
         <img src="assets/images/shape1.png" alt="" class="shape shape-1">
         <img src="assets/images/shape1.png" alt="" class="shape shape-2">
         <img src="assets/images/shape-2.svg" alt="" class="shape shape-3">
@@ -102,47 +98,51 @@
                             <div class="col-lg-6">
                                 <div class="hero-content">
                                     <small>Simple, Transparent & Secure</small>
-                                    <h1><span class="home-pay">HomePay</span> Real-time fintech <br> infrastructure
-                                        company Focussed <br> <span class="heading-bg">Exclusively On <span
-                                                class="bd">Bangladesh</span></span></h1>
+                                    <h1><span class="home-pay">HomePay</span> a Real-time <br> fintech infrastructure
+                                        company, <br> <span class="heading-bg"> Focussed On <span
+                                                class="bd">Bangladesh.</span></span></h1>
                                     <p>Our services focus on two primary areas real-time <br> payments and identity
                                         verification. Leading global
                                         and <br> local digital
-                                        platforms use our API's for cross border and <br> local transactions for payments and
+                                        platforms use our API's for cross border and <br> local transactions for
+                                        payments and
                                         identity verification.
                                     </p>
                                     <!-- <div class="hero-btn">
-                                        <a href="#" class="btn btn-primary">Read more</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="img-box">
-                                    <img src="assets/images/hero-bg.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="hero-content">
-                                    <small>Simple, Transparent & Secure</small>
-                                    <h1><span class="home-pay">HomePay</span> Real-time fintech <br> infrastructure
-                                        company Focused <br> <span class="heading-bg">Exclusively On <span
-                                                class="bd">Bangladesh</span></span></h1>
-                                    <p>Our services focus on two primary areas - real-time payments and identity
-                                        verification. Leading global
-                                        and local digital
-                                        platforms use our API's for cross border and local transactions for payments and
-                                        identity verification.
-                                    </p>
+                                                                        <a href="#" class="btn btn-primary">Read more</a>
+                                                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="img-box">
                                     <img src="assets/images/about-blaze.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="hero-content">
+                                    <small>Simple, Transparent & Secure</small>
+                                    <h1><span class="home-pay">HomePay</span> a Real-time <br> fintech infrastructure
+                                        company, <br> <span class="heading-bg"> Focussed On <span
+                                                class="bd">Bangladesh.</span></span></h1>
+                                    <p>Our services focus on two primary areas real-time <br> payments and identity
+                                        verification. Leading global
+                                        and <br> local digital
+                                        platforms use our API's for cross border and <br> local transactions for
+                                        payments and
+                                        identity verification.
+                                    </p>
+                                    <!-- <div class="hero-btn">
+                                                                                <a href="#" class="btn btn-primary">Read more</a>
+                                                                            </div> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-box">
+                                    <img src="assets/images/hero-bg.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
     <!-- Hero Area End -->
 
 
-    <section class="service-area pt-100 pb-200" id="service">
+    <section class="service-area pt-100 pb-100" id="service">
         <div class="container">
             <div class="section-title">
                 <h2>Our Products</h2>
@@ -167,21 +167,22 @@
                 </div>
             </div>
             <div class="row pt-100 d-flex align-items-center">
-                <div class="col-md-6 blaze-konnect-img">
-                    <img src="assets/images/blaze-bg.svg" alt="blaze-image">
+                <div class="col-md-6 blaze-konnect-img pt-4">
+                    <img src="assets/images/blaze-bg.svg" alt="blaze-image" data-aos="fade-right">
                 </div>
                 <div class="col-md-6">
-                    <div class="section-content blaze">
+                    <div class="section-content blaze pt-4">
                         <img src="assets/images/blaze-logo.png" alt="blaze logo">
                         <p>Blaze is Bangladesh’s first instant, 24×7, 365 days cross-border payment network. Blaze is
                             Bangladesh’s first instant,
                             24×7, 365 days cross-border payment network</p>
-                        <a href="blaze.html" class="btn btn-primary">Learn More</a>
+                        <a href="blaze.html" class="btn btn-primary">Learn More <span class="arrow"><i
+                                    class="fa-solid fa-arrow-right-long"></i></span></a>
                     </div>
                 </div>
             </div>
 
-            <div class="row pt-200 d-flex align-items-center column-rev">
+            <div class="row pt-100 d-flex align-items-center column-rev">
                 <div class="col-md-6">
                     <div class="section-content konnect">
                         <img src="assets/images/konnect-logo.png" alt="konnect image">
@@ -189,11 +190,12 @@
                             365 days payment services
                             on its platform. A user can transfer funds to all bank accounts in Bangladesh directly from
                             the app or the platform.</p>
-                        <a href="konnect.html" class="btn btn-primary">Learn More</a>
+                        <a href="konnect.html" class="btn btn-primary">Learn More <span class="arrow"><i
+                                    class="fa-solid fa-arrow-right-long"></i></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 blaze-konnect-img">
-                    <img src="assets/images/konnect-bg.svg" alt="konnect logo">
+                    <img src="assets/images/konnect-bg.svg" alt="konnect logo" data-aos="fade-left">
                 </div>
             </div>
         </div>
@@ -207,7 +209,7 @@
                     <h4>Testimonials</h4>
                     <h2>Hear what our clients say</h2>
                 </div>
-        
+
                 <div class="owl-carousel owl-theme" id="carousel-2">
                     <div class="item">
                         <div class="single-testimonial">
@@ -226,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="item">
                         <div class="single-testimonial">
                             <span><i class="fa-solid fa-quote-left"></i></span>
@@ -245,26 +247,7 @@
                             </div>
                         </div>
                     </div>
-        
-                    <div class="item">
-                        <div class="single-testimonial">
-                            <span><i class="fa-solid fa-quote-left"></i></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore
-                                magna
-                                aliqua quis nostrud exercitation ullamco</p>
-                            <div class="profile">
-                                <div class="dp-img">
-                                    <img src="assets/images/dp.png" alt="">
-                                </div>
-                                <div class="name">
-                                    <h3>Sophie Moore</h3>
-                                    <h4>Product Developer at Webflow</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
+
                 </div>
             </div>
         </div>
@@ -279,23 +262,24 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="row pt-200 pb-200 g-5">
-                    <div class="col-md-6">
+                <div class="row pt-100 pb-200 g-5">
+                    <div class="col-md-6 pt-4">
                         <div class="contact-form">
                             <h2>Leave your message</h2>
-                            <small>Please Fill THIS FORM</small>
+                            <h4>Please Fill THIS FORM</h4>
                             <form class="form-area">
                                 <div class="flex-field">
                                     <div>
-                                        <input type="email" class="form-control" placeholder="YOUR NAME *">
+                                        <input type="text" class="form-control" placeholder="YOUR NAME *">
                                     </div>
                                     <div>
-                                        <input type="email" class="form-control" placeholder="EMAIL ADDRESS*">
+                                        <input type="email" class="form-control" placeholder="EMAIL ADDRESS*"
+                                            id="email">
                                     </div>
                                 </div>
                                 <div class="flex-field">
                                     <div>
-                                        <input type="number" class="form-control" placeholder="PHONE NUMBER">
+                                        <input type="text" class="form-control" placeholder="PHONE NUMBER">
                                     </div>
                                     <div>
                                         <input type="text" class="form-control" placeholder="SUBJECT">
@@ -308,7 +292,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6 left-30">
+                    <div class="col-md-6 left-30 pt-4">
                         <div class="contact-form">
                             <h2>Get in touch with us</h2>
                             <!-- <small>Please Fill THIS FORM</small> -->
@@ -319,51 +303,54 @@
                                         <ul>
                                             <li>
                                                 <span><i class="fa-solid fa-location-dot"></i></span>
-                                                <p>House 37, Flat A4, Road 27, Block-A Banani, Dhaka 1213,Bangladesh</p>
+                                                <p class="address">242 Tejgaon I/A
+                                                    Gulshan Link Road
+                                                    Dhaka - 1208 <br>
+                                                    Bangladesh</p>
                                             </li>
                                             <li>
                                                 <span><i class="fa-solid fa-envelope"></i></span>
-                                                <p>info.tpnl@gmail.com <br>
-                                                    info.tpnl@gmail.com</p>
+                                                <p>blaze@homepay.io</p>
                                             </li>
                                             <li>
                                                 <span><i class="fa-solid fa-phone"></i></span>
-                                                <p>+88 03242342342 <br>
-                                                    +88 03242342342</p>
+                                                <p>+ 88 02-8879224-5</p>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <h3>USA</h3>
-                                        <ul>
-                                            <li>
-                                                <span><i class="fa-solid fa-location-dot"></i></span>
-                                                House 37, Flat A4, Road Block-A Banani, Dhaka 1213,Bangladesh
-                                            </li>
-                                            <li>
-                                                <span><i class="fa-solid fa-envelope"></i></span>
-                                                <p>info.tpnl@gmail.com <br>
-                                                    info.tpnl@gmail.com</p>
-                                            </li>
-                                            <li>
-                                                <span><i class="fa-solid fa-phone"></i></span>
-                                                <p>+88 03242342342 <br>
-                                                    +88 03242342342</p>
-                                            </li>
-                                        </ul>
+                                        <div class="info">
+                                            <ul>
+                                                <li>
+                                                    <span><i class="fa-solid fa-location-dot"></i></span>
+                                                    <p class="address">24Nme LLC
+                                                        35640 Fremont Blvd#336
+                                                        Fremont, California 94536
+                                                        USA</p>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa-solid fa-envelope"></i></span>
+                                                    <p>blaze@homepay.io</p>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa-solid fa-phone"></i></span>
+                                                    <p>+ 510-936-2452</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="contact-social">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#" class="mx-4"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                    <div class="contact-social">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#" class="mx-4"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Footer -->
@@ -376,10 +363,13 @@
                             <h3>Contact Info</h3>
                             <div class="address-area">
                                 Address : <br>
-                                <p>House 37, Flat A4, Road 27, Block-A Banani, Dhaka 1213,Bangladesh</p>
+                                <p>24Nme LLC <br>
+                                    35640 Fremont Blvd#336 <br>
+                                    Fremont, California 94536
+                                    USA</p>
                                 <div class="number-email">
-                                    Phone :<a href="">(+880) 9610-500500</a> <br>
-                                    Email:<a href="#"> info@homepay.com</a>
+                                    Phone :<a href="" class="text-white">+ 510-936-2452</a> <br>
+                                    E-mail :<a href="#"> blaze@homepay.io</a>
                                 </div>
                             </div>
                         </div>
@@ -388,19 +378,18 @@
                         <div class="single-footer">
                             <h3>Support</h3>
                             <ul>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="#hero">About Us</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer">
-                            <h3>My Account</h3>
+                            <h3>Products</h3>
                             <ul>
-                                <li><a href="#">Log In</a></li>
-                                <li><a href="#">Track History</a></li>
-                                <li><a href="#">My Whislist</a></li>
+                                <li><a href="blaze.html">Blaze</a></li>
+                                <li><a href="konnect.html">Konnect</a></li>
                             </ul>
                         </div>
                     </div>
@@ -431,11 +420,21 @@
 
         <hr class="hr">
         <div class="copyright">
-            <p>Copyright <span id="year" class="mx-1"></span> money Transfer | Designed By Home-Pay</p>
+            <p>&copy; <span id="year" class="mx-1"></span>HomePay. All Rights Reserved By HomePay</p>
         </div>
     </footer>
     <!-- Footer -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // AOS.init();
+        AOS.init({
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
     <script src="assets/js/jquery-1.12.0.min.js"></script>
     <script src="assets/js/owl-carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
