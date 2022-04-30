@@ -36,9 +36,3 @@ body.onclick = function () {
     hero2.style.opacity = "1";
     pulseBtn.style.opacity = "1";
 }
-
-// var bar1 = document.querySelector('.menu-bar1');
-
-// bar1.onclick = function () {
-//     bar1.style.rotate = "20deg";
-// }

@@ -10,11 +10,6 @@
 /* ===================================
    Media Queries
 ====================================== */
-@media only screen and (max-width: 1550px) {
-    .hero-row {
-        padding-top: 240;
-    }
-}
 
 @media only screen and (max-width: 1400px) {
     .img-box {
@@ -23,10 +18,6 @@
 
     .hero-content h1 {
         margin: .5rem 0;
-    }
-
-    .hero-btn {
-        margin-top: 20px;
     }
 
     .contact-form input {
@@ -38,37 +29,53 @@
         margin-top: 20px;
     }
 
+    .blaze-hero-area{
+        height: 100vh !important;
+    }
+
+    .circle-animation {
+        top: -10%;
+        right: 10rem !important;
+    }
+
     .blaze-hero h1 {
-        font-size: 38px;
-        font-weight: 800;
+        font-size: 36px;
         line-height: 50px;
-        color: var(--primary-color);
+    }
+
+    .blaze-hero h1 span {
+        font-size: 64px;
+    }
+
+    .blaze-hero p {
+        font-size: 18px;
     }
 
     .hero-area {
-        height: calc(100vh - 0vh);
-    }
-
-    .hero-row {
-        padding-top: 120px !important;
+        height: 100vh;
     }
 
     .hero-content small {
         font-size: 18px;
     }
 
+    .owl-dots {
+        bottom: -2rem;
+    }
+
     .hero-content h1 {
         font-size: 30px;
-        line-height: 55px;
+        line-height: 50px;
         margin: .5rem 0;
     }
 
     .hero-content h1 .home-pay {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .hero-content p {
         font-size: 16px;
+        line-height: 25px;
     }
 
     .btn-primary {
@@ -90,6 +97,10 @@
 }
 
 @media only screen and (max-width: 1300px) {
+    .res-pt {
+        padding-top: 120px;
+    }
+
     .single-app-card h4 {
         font-size: 22px;
     }
@@ -140,6 +151,10 @@
 }
 
 @media only screen and (max-width: 1250px) {
+    .res-pt {
+        padding-top: 0;
+    }
+
     .konnect-hero {
         top: 58%;
     }
@@ -159,6 +174,12 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+
     .single-blaze-services h3 {
         font-size: 16px;
     }
@@ -540,7 +561,7 @@
         height: 68vh !important;
     }
 
-    .pt-100-hero{
+    .pt-100-hero {
         padding-top: 10px;
     }
 
@@ -740,6 +761,11 @@
 
     .konnect-hero h1 {
         font-size: 20px;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
     }
 }
 

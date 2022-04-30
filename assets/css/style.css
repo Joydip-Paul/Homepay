@@ -1,9 +1,7 @@
 /*
 //////////////////////////////
-Website Name:
-Author: Joydip Paul
-Demo: 
-Author URI: 
+Website Name: HomePay
+Developer: Joydip Paul
 Description: 
 Version: 1.0
 /////////////////////////////
@@ -18,7 +16,7 @@ Version: 1.0
     5.our-services
     6.Portfolio
     7.Blog
-    8.Contact
+    8.Contact 
     9.Footer
     10.Responsive
     11.Custom css
@@ -369,14 +367,14 @@ p {
     transition: opacity .2s ease;
     border-radius: 30px;
     margin: 0 5px;
-    background-color: #F0AA56;
+    background: #1E335D33;
     width: 20px;
     height: 12px;
     border-radius: 100px;
 }
 
 .owl-dots .owl-dot.active span {
-    background: #1E335D33;
+    background-color: #F0AA56;
     width: 30px;
 }
 
@@ -1033,7 +1031,7 @@ p {
 }
 
 .blaze-konnect-img img {
-    width: 75%;
+    width: 95%;
 }
 
 .single-blaze-services h3::after {
